@@ -1,4 +1,4 @@
-#todo #Mac #Programming 
+#todo #Programming 
 Mac's version of GDB.
 `lldb` then `help`
 
