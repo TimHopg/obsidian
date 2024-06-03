@@ -3,6 +3,7 @@
 Divide number (n) by the base (b) until n < b then reassemble.
 
 ```c
+
 blen = base length
 	
 if (nbr < 0)
