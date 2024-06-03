@@ -1,6 +1,6 @@
 #School42 
 
-* [Guide](https://phoenixnap.com/kb/install-zsh-ubuntu) to install [[zsh]] on #Ubuntu 
+* [Guide](https://phoenixnap.com/kb/install-zsh-ubuntu) to install zsh on #Ubuntu 
 * 42 Package Manager for additional software
 * [42 Toolbox](https://github.com/alexandregv/42toolbox)
 * Search slack
@@ -20,5 +20,3 @@
 #### Tests
 * [[printf() tests]]
 * [[Testing strmapi()]]
-
-![[42 Resources.png]]

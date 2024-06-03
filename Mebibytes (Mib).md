@@ -1,7 +1,7 @@
 ---
 aliases: Gibibytes
 ---
-#todo 
+#todo #Programming 
 A binary multiple of a byte.
 1 mebibyte = 2^20 bytes = 1,048,576 bytes
 
