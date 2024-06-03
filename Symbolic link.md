@@ -7,8 +7,7 @@ Symbolic links point to a path so moving the original directory/file will leave 
 `ln -sf new/path/etc. link` - Force update the path to the link.
 
 A hard link points to the data, like a pointer. It basically creates another directory entry for the same memory inode.
-`ln file1 link1` - omit the -s#todo 
-
+`ln file1 link1` - omit the `-s`
 #### References
 [[Shell Commands]]
 
