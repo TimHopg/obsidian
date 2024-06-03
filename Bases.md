@@ -6,8 +6,7 @@ Divide number (n) by the base (b) until n < b then reassemble.
 
 blen = base length
 	
-if (nbr < 0)
-	{
+if (nbr < 0) {
 		// output[0] = '-';
 		i = 0;
 	}
