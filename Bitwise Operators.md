@@ -47,6 +47,10 @@ The first bit of an 8 bit number represents the sign.
 With negative binary numbers, the remaining 7 digits is counting up from 128.
 
 _LSB_ - _Least Significant Bit_ - The rightmost bit, lowest in value
+
+#### The Relationship Between Binary and Hex
+A single hex digit is the equivalent of a nibble (4 bits) `1111` = `F`.
+
 #### References
 [[Twos Complement]]
 [[Binary]]
