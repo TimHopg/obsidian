@@ -50,7 +50,14 @@ _LSB_ - _Least Significant Bit_ - The rightmost bit, lowest in value
 #### The Relationship Between Binary and Hex
 A single hex digit is the equivalent of a nibble (4 bits) `1111` = `F`.
 When printing a binary number in C `0b11110000` an octet. This can be printed as `%02X` using `printf()`. It says to pad with leading `0`'s and make it `2` characters long.
-#### Swap Bytes without Additional Variabl
+#### Swap Bytes without Additional Variable (using _XOR_)
+`a = 1001`
+`b = 1010`
+`a = a XOR b = 0011`
+`b = a XOR b = 1001`
+`a = a XOR b = 1010`
+
+Use _XOR_ three times and the values have swapped.
 #### References
 [[Twos Complement]]
 [[Binary]]
