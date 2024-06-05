@@ -47,10 +47,10 @@ The first bit of an 8 bit number represents the sign.
 With negative binary numbers, the remaining 7 digits is counting up from 128.
 
 _LSB_ - _Least Significant Bit_ - The rightmost bit, lowest in value
-
 #### The Relationship Between Binary and Hex
 A single hex digit is the equivalent of a nibble (4 bits) `1111` = `F`.
 When printing a binary number in C `0b11110000` an octet. This can be printed as `%02X` using `printf()`. It says to pad with leading `0`'s and make it `2` characters long.
+#### Swap Bytes without Additional Variabl
 #### References
 [[Twos Complement]]
 [[Binary]]
