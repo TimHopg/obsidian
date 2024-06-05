@@ -32,63 +32,23 @@ int val(char c) {
 
 int toDeci(char *str, int base)
 {
-  int len = `strlen``(str);`
-
-    `int` `power = 1;` `// Initialize power of base`
-
-    `int` `num = 0;`  `// Initialize result`
-
-    `int` `i;`
-
-    `// Decimal equivalent is str[len-1]*1 +`
-
-    `// str[len-2]*base + str[len-3]*(base^2) + ...`
-
-    `for` `(i = len - 1; i >= 0; i--)`
-
-    `{`
-
-        `// A digit in input number must be`
-
-        `// less than number's base`
-
-        `if` `(val(str[i]) >= base)`
-
-        `{`
-
-           `printf``(``"Invalid Number"``);`
-
-           `return` `-1;`
-
-        `}`
-
-        `num += val(str[i]) * power;`
-
-        `power = power * base;`
-
-    `}`
-
-    `return` `num;`
-
-`}`
-
-`// Driver code`
-
-`int` `main()`
-
-`{`
-
-    `char` `str[] =` `"11A"``;`
-
-    `int` `base = 16;`
-
-    `printf``(``"Decimal equivalent of %s in base %d is "`
-
-           `" %d\n"``, str, base, toDeci(str, base));`
-
-    `return` `0;`
-
-`}`
+  int len = strlen (str);
+  int power = 1; // Initialize power of base
+  int num = 0; // Initialize result
+  int i;
+  
+  // Decimal equivalent is str[len-1]*1 +
+  // str[len-2]*base + str[len-3]*(base^2) + ...
+  for (i = len - 1; i >= 0; i--) {
+    // Digit' input number must be less than number's base
+    if (val(str[i]) >= base) {
+      printf("Invalid Number");
+      return -1; }
+    num += val(str[i]) * power;
+    power = power * base;
+  }
+    return num;
+}
 ```
 
 [one base to another [YouTube]](https://youtu.be/hIs3A6gGz2w?si=8_fPH_qtNwnX3EeL)
