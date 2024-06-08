@@ -2,6 +2,8 @@
 
 Makefiles are whitespace sensitive
 
+`CFLAGS = -Wall -Wextra -Werror` 
+
 `target: dependencies
 ``	action
 
@@ -21,4 +23,4 @@ Makefiles are whitespace sensitive
 `$@` target
 
 #### References
-[[]]
+[[Code Structure]]
