@@ -2,7 +2,7 @@
 
 Makefiles are whitespace sensitive
 
-`CFLAGS = -Wall -Wextra -Werror` 
+`CFLAGS = -Wall -Wextra -Werror -I../include` - warning flags and `-I` include flag which specifies the folder where header files will be stored
 
 `target: dependencies
 ``	action
