@@ -1,11 +1,4 @@
 #todo 
-#### Declaring Function Convention
-`rtn function(arg);` // function statement before main()
-`function(arg);` // call function in main
-
-// function definition below main()
-`rtn function(void) {`
-	`functioin code }`
 #### Typecasting
 `float x = (float) 5 / 2`
 #### Constants
