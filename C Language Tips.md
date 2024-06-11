@@ -42,8 +42,9 @@ The value of the comma expression equates to the value of the right-most express
 `x = (1, 2, 3) // x = 3`
 #### size_t
 `sizeof()` is determined at compile time not at run-time
-`%zu` - positive _size_t_ values
-`%zd` - negative _size_t_ values
+`size_t` - size type
+`%zu` - positive _size_t_ values (siZe Unsigned)
+`%zd` - negative _size_t_ values (siZe Decimal)
 #### References
 [[Pre & Post Decrement Increment]]
 [[Bitwise Operators]]
