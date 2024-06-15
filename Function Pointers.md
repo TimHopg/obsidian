@@ -21,12 +21,12 @@ Function pointers can also be `typedef`'d:
 then declared as:
 `ft_operation *op;`
 
+Declare a function pointer within a function:
+`void (*function)(int a, int b);`
+Then 
+
 Function pointers are defined at run time, not at compile time so their dependencies can be updated.
 #### References
 
 
-_2024-05-31 18:44_return a n als an AA function pointer is just as the name suggests.  pintreturn a n als an AA function pointer is just as the name suggests.  pint
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbODk0OTYwNTEyLC05MDc4ODE5MjcsLTE3Mz
-YyNzg2MzJdfQ==
--->
+_2024-05-31 18:44_
