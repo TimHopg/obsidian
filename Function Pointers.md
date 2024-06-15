@@ -23,7 +23,7 @@ then declared as:
 
 Declare a function pointer within a function:
 `void (*function)(int a, int b);`
-Then 
+Then in your code, if something... `function = func_add;`.
 
 Function pointers are defined at run time, not at compile time so their dependencies can be updated.
 #### References
