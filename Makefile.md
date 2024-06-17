@@ -5,7 +5,9 @@
 
 `$<` first dependency
 `$^` all dependencies
-`$@` target
+`$@` target - when you see this essentially copy and paste the target to where it is
+
+`%.o: %.c` - (`%` wildcard) any `.o` file depends on the same `.c` name file
 
 `CFLAGS = -Wall -Wextra -Werror -Iinclude` - warning flags and `-I` include flag which specifies the folder where header files will be stored (Redacted: `../include` - one directory up, relative to `SRC` files)
 
