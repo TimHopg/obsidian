@@ -15,6 +15,14 @@
 `CUR_DIR = $(shell pwd)`
 `-C` change directory
 
+```makefile
+$(OBJ_DIR)%.o: $(SRC_DIR)%.c
+	@mkdir -p $(OBJ_DIR)
+	@$(CC) $(CFLAGS) -c $< -o $@ $(INCLUDE)
+```
+
+`mkdir -p` - creates intermediate directories as required
+
 `@` suppresses output to command line
 
 `CFLAGS` is a keyword so it is handled implicitly
