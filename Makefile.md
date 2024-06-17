@@ -3,6 +3,8 @@
 `target: dependencies
 ``	action
 
+Once `dependencies` are satisfied/created, the `target` can be run by doing the `action`
+
 `$<` first dependency
 `$^` all dependencies
 `$@` target - when you see this essentially copy and paste the target to where it is
@@ -22,7 +24,6 @@ $(OBJ_DIR)%.o: $(SRC_DIR)%.c
 ```
 
 `mkdir -p` - creates intermediate directories as required
-
 `@` suppresses output to command line
 
 `CFLAGS` is a keyword so it is handled implicitly
