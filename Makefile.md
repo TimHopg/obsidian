@@ -26,6 +26,8 @@ $(OBJ_DIR)%.o: $(SRC_DIR)%.c
 `mkdir -p` - creates intermediate directories as required
 `@` suppresses output to command line
 
+_Note:_ Always link your external libs AFTER your object files! Not doing so may lead to an `undefined reference`.
+
 `CFLAGS` is a keyword so it is handled implicitly
 
 Makefiles are whitespace sensitive
