@@ -33,7 +33,19 @@ _Note:_ Always link your external libs AFTER your object files! Not doing so may
 Makefiles are whitespace sensitive
 `make -n` executes make showing all commands
 
+#### Developing on both platforms
 
+`ifeq uname` is Linux set some variables to something. Else set them to something else.
+
+``` makefile
+ifeq ($(shell uname), Linux)
+	MLX_INCLUDE = -I/usr/include -Imlx
+	MLX_FLAGS = -Lmlx -lmlx -L/usr/lib/X11 -lXext -lX11
+else # OSX
+	MLX_INCLUDE = -I/opt/X11/include -Imlx
+	MLX_FLAGS = -Lmlx -lmlx -L/usr/X11/lib -lXext -lX11 -framework OpenGL -framework AppKit
+endif
+```
 
 #### References
 [[Code Structure]]
