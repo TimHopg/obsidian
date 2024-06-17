@@ -17,6 +17,7 @@
 	* `:Stdheader` vim normal mode
 	* [42 Header](https://github.com/42Paris/42header)
 * [Installette](https://github.com/Kuninoto/installette) - a collection of 42 tools
+* [42 CLI](https://github.com/herbievine/42-cli)
 #### Tests
 * [[printf() tests]]
 * [[Testing strmapi()]]
