@@ -36,6 +36,7 @@ Makefiles are whitespace sensitive
 If your first rule is `all:` that will run if you type just `make`
 
 `-` - dash before a command says run and continue running even if error occurs
+`make --verbose` - prints all commands even if quieted
 #### Add Rules For Other tasks
 - `diff: git diff --stat` - to show git diffs before commiting
 - tarballs
