@@ -33,6 +33,14 @@ _Note:_ Always link your external libs AFTER your object files! Not doing so may
 Makefiles are whitespace sensitive
 `make -n` executes make showing all commands
 
+If your first rule is `all:` that will run if you type just `make`
+
+`-` - dash before a command says run and continue running even if error occurs
+#### Add Rules For Other tasks
+- `diff: git diff --stat` - to show git diffs before commiting
+- tarballs
+- other git tasks
+
 #### Developing on both platforms
 
 `ifeq uname` is Linux set some variables to something. Else set them to something else.
