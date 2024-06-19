@@ -24,8 +24,8 @@ mlx_loop(mlx);
 #### Colours
 Colours are displayed in the  TRGB format.
 `0xTTRRGGBB`
-
-
+`T` - transparency
+`RGB` - Red/Green/Blue
 #### Events
 Mac has only partial support of X11 so X11_mask isn't supported:
 ```
@@ -84,6 +84,6 @@ Masks are used to limit the keys that each event is mapped to.
 
 _2024-06-17 17:12_
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQwODExNTc1LC0xMzk2NjExMDg0LC04Mz
-Q3MTQ2MTVdfQ==
+eyJoaXN0b3J5IjpbLTE4Nzc3Njk3MzQsODQwODExNTc1LC0xMz
+k2NjExMDg0LC04MzQ3MTQ2MTVdfQ==
 -->
