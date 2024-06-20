@@ -14,4 +14,25 @@
 `FILE` is a datatype
 `FILE *fptr;`  
 `fptr = fopen(_filename_, _mode_);`
-###
+#### Create File
+`w` or `a` - creates file in same location as c file (unless otherwise specified), if it doesn't exist it creates it
+
+```C
+FILE *fptr;
+fptr = fopen("filename.txt", "w"); // Create a file
+fclose(fptr); // Close the file
+```
+
+To create a file in a specific place:
+`fptr = fopen("C:\directoryname\filename.txt", "w");`
+Use `fclose()` to close file after use.
+#### Write to File
+```C
+FILE *fptr;
+// Opens file in writing mode
+fptr = fopen("filename.txt", "w");
+// Writes text to the file. If file already exists, old content is deleted
+fprintf(fptr, "Some text");
+// Close the file
+fclose(fptr);
+```
