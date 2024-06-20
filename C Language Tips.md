@@ -35,6 +35,12 @@ y += x > 10? 17: 37;
 printf("The number %d is %s.\n", x, x % 2 == 0? "even": "odd");
 ```
 #### Switch Statements
+```C
+switch(expression)
+{
+
+}
+```
 #### Compiling Standards
 `gcc -std=C89` - forces compile using the C89 standard. (add `-pedantic`)
 #### Comma Operator
