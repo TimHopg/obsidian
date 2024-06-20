@@ -35,10 +35,17 @@ y += x > 10? 17: 37;
 printf("The number %d is %s.\n", x, x % 2 == 0? "even": "odd");
 ```
 #### Switch Statements
+- Default statement is optional and runs if no cases are satisfied
 ```C
-switch(expression)
-{
-
+switch(expression){
+	case x:
+		// code block
+		break;
+	case y:
+		//code block
+		break;
+	default:
+		// code block
 }
 ```
 #### Compiling Standards
@@ -51,6 +58,9 @@ The value of the comma expression equates to the value of the right-most express
 `size_t` - size type
 `%zu` - positive _size_t_ values (siZe Unsigned)
 `%zd` - negative _size_t_ values (siZe Decimal)
+#### Break & Continue
+`break` exits loop
+`continue` breaks one iteration of the loop
 #### References
 [[Pre & Post Decrement Increment]]
 [[Bitwise Operators]]
