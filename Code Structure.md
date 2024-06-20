@@ -1,5 +1,11 @@
 #todo #C_Language #Programming 
 
+#### Rules
+- Avoid deep nesting
+	- Try inverting logic. Instead of `if is` try `if not` or vice versa
+	- Merge related if statements
+- Extraction
+	- Extract complex logic to its own methods or functions
 
 ```
 project/
