@@ -61,6 +61,8 @@ The value of the comma expression equates to the value of the right-most express
 #### Break & Continue
 `break` exits loop
 `continue` breaks one iteration of the loop
+#### Pointers
+Always set pointers to `NULL` if not setting to something meaningful.
 #### References
 [[Pre & Post Decrement Increment]]
 [[Bitwise Operators]]

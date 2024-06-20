@@ -5,10 +5,10 @@
 a pointer is an address in memory
 
 `*ptr` is the value that lives at the address
-`*` = dereferencing operator
+`*` = dereferencing operator (dereference)
 
 `&a` = address of a
-`&` = referencing operator. gives address of value
+`&` = referencing operator. gives address of value (reference)
 
 ### Declaring Pointers
 ```c
