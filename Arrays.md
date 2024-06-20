@@ -11,6 +11,8 @@ You cannot change the size of the array after creation.
 `int matrix[2][3] = { {1, 4, 2}, {3, 6, 8} };`
 `[2]` = rows
 `[3]` = columns
+- Use a nested loop to iterate over a 2D array
+
 ```C
 int matrix[2][3] = { {1, 4, 2}, {3, 6, 8} };  
   
