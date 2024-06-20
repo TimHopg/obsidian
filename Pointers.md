@@ -10,6 +10,7 @@ a pointer is an address in memory
 `&a` = address of a
 `&` = referencing operator. gives address of value (reference)
 
+Always set pointers to `NULL` if not setting to something meaningful.
 ### Declaring Pointers
 ```c
 int (ptr_name *)(int, int);
