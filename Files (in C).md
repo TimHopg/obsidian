@@ -52,14 +52,13 @@ FILE *fptr;
 fptr = fopen("filename.txt", "r"); // Open a file in read mode   
 char myString[100]; // Store the content of the file
 
-if(fptr != NULL) { // If the file exists
+if(fptr != NULL) // If the file exists
 // Reads content and prints. loop because fgets only reads first line
-	while(fgets(myString, 100, fptr)) {
-	printf("%s", myString);
-}
-  
-// If the file does not exist   } else {
-printf("Not able to open the file.");
-} 
+	while(fgets(myString, 100, fptr))
+		printf("%s", myString);
+
+else // If the file does not exist 
+	printf("Not able to open the file.");
+
 fclose(fptr); // Close the file
 ```
