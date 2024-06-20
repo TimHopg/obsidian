@@ -1,11 +1,22 @@
 #todo #C_Language #Programming 
 
-#### Rules
+#### Laws
 - Avoid deep nesting
 	- Try inverting logic. Instead of `if is` try `if not` or vice versa
 	- Merge related if statements
 - Extraction
 	- Extract complex logic to its own methods or functions
+- Avoid Duplication
+	- Extract code duplication into its own function or variable
+- Follow Naming Convention
+#### Declaring Function Convention
+`rtn function(arg);` // function statement before main()
+`function(arg);` // call function in main
+
+// function definition below main()
+`rtn function(void) {`
+	`functioin code }`
+#### Organise Project
 
 ```
 project/
@@ -28,13 +39,6 @@ project/
 The project's `.h` file can `#include` the `libft.h` file. When the `.o` files are being compiled, the `libft.a` library need not be linked until the binary is being created.
 
 So `Iinclude` during the `.o` creation and `-L libft -lft` during the linking phase.
-#### Declaring Function Convention
-`rtn function(arg);` // function statement before main()
-`function(arg);` // call function in main
-
-// function definition below main()
-`rtn function(void) {`
-	`functioin code }`
 #### References
 [[Makefile]]
 [[C Language Tips]]
