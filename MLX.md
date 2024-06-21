@@ -78,6 +78,10 @@ Masks are used to limit the keys that each event is mapped to.
 | `(1L<<9)` | Button2MotionMask | | `(1L<<22)` | PropertyChangeMask |
 | `(1L<<10)` | Button3MotionMask || `(1L<<23)` | ColormapChangeMask |
 | `(1L<<11)` | Button4MotionMask || `(1L<<24)` | OwnerGrabButtonMask |
+#### Hooks
+Hooks are merely functions that are called when an event is triggered.
+_Hooking into events_
+You can regist
 
 #### References
 [42 Docs](https://harm-smits.github.io/42docs/libs/minilibx/introduction.html)
