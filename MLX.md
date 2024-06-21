@@ -81,13 +81,69 @@ Masks are used to limit the keys that each event is mapped to.
 #### Hooks
 Hooks are merely functions that are called when an event is triggered.
 _Hooking into events_
-You can regist
+You can register to any of the events with a hook registration function.
+
+`void mlx_hook(mlx_win_list_t *win_ptr, int x_event, int x_mask, int (*f)(), void *param)`
+Some versions of MLX can't implement mask so no mask will be used regardless of this value.
+
+Hooking event
+
+code
+
+Prototype
+
+ON_KEYDOWN
+
+2
+
+`int (*f)(int keycode, void *param)`
+
+ON_KEYUP*
+
+3
+
+`int (*f)(int keycode, void *param)`
+
+ON_MOUSEDOWN*
+
+4
+
+`int (*f)(int button, int x, int y, void *param)`
+
+ON_MOUSEUP
+
+5
+
+`int (*f)(int button, int x, int y, void *param)`
+
+ON_MOUSEMOVE
+
+6
+
+`int (*f)(int x, int y, void *param)`
+
+ON_EXPOSE*
+
+12
+
+`int (*f)(void *param)`
+ON_DESTROY
+17
+`int (*f)(void *param)`
+_*Has mlx_hook alias._
+
+### [](https://harm-smits.github.io/42docs/libs/minilibx/events.html#hooking-alias)Hooking alias
+
+Minilibx api has some alias hooking function:
+
+-   `mlx_expose_hook` function is an alias of mlx_hook on expose event (`12`).
+-   `mlx_key_hook` function is an alias of mlx_hook on key up event (`3`).
+-   `mlx_mouse_hook` function is an alias of mlx_hook on mouse down event (`4`).
 
 #### References
 [42 Docs](https://harm-smits.github.io/42docs/libs/minilibx/introduction.html)
 
 _2024-06-17 17:12_
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4Nzc3Njk3MzQsODQwODExNTc1LC0xMz
-k2NjExMDg0LC04MzQ3MTQ2MTVdfQ==
+eyJoaXN0b3J5IjpbNzM2NTU5NjU0XX0=
 -->
