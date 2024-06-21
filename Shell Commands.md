@@ -57,6 +57,7 @@ aliases: Terminal Shortcuts
 * [[wall]] - write all. sends message to all users logged in
 * [[who]] - shows who is logged on
 * [[wc]] - word count
+* [[xev]] - display keycode info etc.
 
 `.` - current directory
 `..` - parent directory
