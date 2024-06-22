@@ -27,6 +27,8 @@ Colours are displayed in the  TRGB format.
 `T` - transparency
 `RGB` - Red/Green/Blue
 #### Events
+Events are things that happen at runtime that can be detected by the program. Keyboard events, mouse events or window events (like closing, resizing a window etc).
+
 Mac has only partial support of X11 so X11_mask isn't supported:
 ```
 enum {
@@ -44,20 +46,20 @@ mlx_hook(vars.win, ON_DESTROY, 0, close, &vars);
 #### X11
 X11 is a library that is used alongside MLX.
 
-| Key | Event |  | Key | Event |
-| --- | --- | --- | --- | --- |
-| 02 | KeyPress | | 14 | NoExpose |
-| 03 | KeyRelease | | 15 | VisibilityNotify |
-| 04 | ButtonPress | | 16 | CreateNotify |
-| 05 | ButtonRelease | | 17 | DestroyNotify |
-| 06 | MotionNotify | | 18 | UnmapNotify |
-| 07 | EnterNotify | | 19 | MapNotify |
-| 08 | LeaveNotify | | 20 | MapRequest |
-| 09 | FocusIn | | 21 | ReparentNotify |
-| 10 | FocusOut | | 22 | ConfigureNotify |
-| 11 | KeymapNotify | | 23 | ConfigureRequest |
-| 12 | Expose | | 24 | GravityNotify |
-| 13 | GraphicsExpose | | 25 | ResizeRequest |
+| Key | Event          |     | Key | Event            |
+| --- | -------------- | --- | --- | ---------------- |
+| 02  | KeyPress       |     | 14  | NoExpose         |
+| 03  | KeyRelease     |     | 15  | VisibilityNotify |
+| 04  | ButtonPress    |     | 16  | CreateNotify     |
+| 05  | ButtonRelease  |     | 17  | DestroyNotify    |
+| 06  | MotionNotify   |     | 18  | UnmapNotify      |
+| 07  | EnterNotify    |     | 19  | MapNotify        |
+| 08  | LeaveNotify    |     | 20  | MapRequest       |
+| 09  | FocusIn        |     | 21  | ReparentNotify   |
+| 10  | FocusOut       |     | 22  | ConfigureNotify  |
+| 11  | KeymapNotify   |     | 23  | ConfigureRequest |
+| 12  | Expose         |     | 24  | GravityNotify    |
+| 13  | GraphicsExpose |     | 25  | ResizeRequest    |
 
 [X11 Documentation](https://tronche.com/gui/x/xlib/events/)
 
