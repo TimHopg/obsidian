@@ -2,6 +2,7 @@
 
 This project uses [[MLX]]
 
+For when I was developing at home on my mac, I used the Remote SSH extension for the first time.
 
 #### References
 [Harm Smits 42 Docs](https://harm-smits.github.io/42docs/libs/minilibx/introduction.html)
