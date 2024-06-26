@@ -9,6 +9,10 @@
 - Avoid Duplication
 	- Extract code duplication into its own function or variable
 - Follow Naming Convention
+
+Comments can be less necessary if the code is written well.
+Eliminate the need for comments by naming correctly, using constants/macros instead of magic numbers etc.
+- Code is updated, comments are often not
 #### Declaring Function Convention
 `rtn function(arg);` // function statement before main()
 `function(arg);` // call function in main
