@@ -25,14 +25,21 @@ aliases: libft readme
 `ft_memcmp()` –   compares first n bytes of two memory blocks for equivalence
 #### Output
 `ft_putchar_fd()` – outputs char to given file descriptor 
-`ft_putstr_fd()` – outputs string to given file descriptor
+`ft_putstr_fd()` –   outputs string to given file descriptor
 `ft_putendl_fd()` – outputs string + new line to file descriptor
-`ft_putnbr_fd()` – outputs integer to given file descriptor
+`ft_putnbr_fd()` –   outputs integer to given file descriptor
 #### Lists
-`ft_lstadd_back()` - appends node to list
+`ft_lstadd_back()` -   appends node to list
 `ft_lstadd_front()` - prepends node to list
+`ft_lstclear()` -         frees each node in list and sets pointer to `NULL`
+`ft_lstdelone()` -       frees contents of single node using function pointer
+`ft_lstiter()` -           iterates through list and applies function `f` to each node
+`ft_lstlast()` -           returns last node of list
+`ft_lstmap()` -             iterates through list applying function `f` to each node and returns new list
+`ft_lstnew()` -             mallocs new node
+`ft_lstsize()` -           returns size of list
 #### Strings
-`ft_strlen()` – length of string
+`ft_strlen()` –   length of string
 `ft_strlcpy()` – copies up to size-1 chars and null terminates
 `ft_strlcat()` – concats one string to end of other and null terminates
 `ft_strchr()` –   finds the first occurrence of char in string
