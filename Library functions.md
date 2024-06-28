@@ -28,6 +28,7 @@ aliases: libft readme
 `ft_putstr_fd()` –   outputs string to given file descriptor
 `ft_putendl_fd()` – outputs string + new line to file descriptor
 `ft_putnbr_fd()` –   outputs integer to given file descriptor
+
 #### Lists
 `ft_lstadd_back()` -   appends node to list
 `ft_lstadd_front()` - prepends node to list
@@ -58,3 +59,5 @@ aliases: libft readme
 `ft_strndup()` - duplicate string with malloc up to n chars
 `ft_calloc()` –   mallocs memory and initiates all to zero
 `ft_strmapi()` – Applies function `f` to each character of string and returns malloc'd string
+#### Other
+`ft_printf()` - own implementation of `printf()`
