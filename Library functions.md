@@ -47,3 +47,5 @@ aliases: libft readme
 `ft_strndup()` - duplicate string with malloc up to n chars
 `ft_isinset()` - is character part of string
 `ft_countwords()` - counts words by separators
+
+#### Malloc Functions
