@@ -1,8 +1,7 @@
 ---
 aliases: libft readme
 ---
-#todo #School42 #C_Language 
-
+#School42 #C_Language 
 #### Boolean etc.
 `ft_isalpha()` – is alphabet?
 `ft_isdigit()` – is number?
@@ -28,7 +27,7 @@ aliases: libft readme
 `ft_putstr_fd()` –   outputs string to given file descriptor
 `ft_putendl_fd()` – outputs string + new line to file descriptor
 `ft_putnbr_fd()` –   outputs integer to given file descriptor
-
+`ft_putbase_fd()` -  outputs and int in a given base to file descriptor
 #### Lists
 `ft_lstadd_back()` -   appends node to list
 `ft_lstadd_front()` - prepends node to list
@@ -40,7 +39,7 @@ aliases: libft readme
 `ft_lstnew()` -             mallocs new node
 `ft_lstsize()` -           returns size of list
 #### Strings
-`ft_strlen()` –   length of string
+`ft_strlen()` –   returns length of string (minus terminating character)
 `ft_strlcpy()` – copies up to size-1 chars and null terminates
 `ft_strlcat()` – concats one string to end of other and null terminates
 `ft_strchr()` –   finds the first occurrence of char in string
@@ -51,7 +50,7 @@ aliases: libft readme
 `ft_striteri()` – Applies function `f` to each character of string in place
 #### Malloc Functions
 `ft_strdup()` –   allocates memory and duplicates string
-`ft_substr()` –   allocates memory and returns substring of string s
+`ft_substr()` –   allocates memory and returns substring of string s (from `start` to length `l`)
 `ft_strjoin()` – allocates memory and returns s1 + s2
 `ft_strtrim()` – allocates memory and returns copy of s1 with set chars trimmed from beginning and end
 `ft_split()` – returns array of strings from s split by char c
@@ -61,3 +60,4 @@ aliases: libft readme
 `ft_strmapi()` – Applies function `f` to each character of string and returns malloc'd string
 #### Other
 `ft_printf()` - own implementation of `printf()`
+`get_next_line()` - returns malloc'd next line from file descriptor
