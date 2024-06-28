@@ -22,10 +22,6 @@ aliases: libft readme
 `ft_memmove()` – same but deals with overlapping data
 `ft_memchr()` –   finds first occurrence of char in n bytes of memory block
 `ft_memcmp()` –   compares first n bytes of two memory blocks for equivalence
-
-`ft_strmapi()` – 
-`ft_striteri()` – 
-
 #### Output
 `ft_putchar_fd()` –  outputs char to given file descriptor 
 `ft_putstr_fd()` –    outputs string to given file descriptor
@@ -40,6 +36,7 @@ aliases: libft readme
 `ft_strncmp()` – compares up to n chars in two strings for equivalence
 `ft_strnstr()` – searches for first occurrence of needle in haystack up to n chars
 `ft_countwords()` - counts words by separators
+`ft_striteri()` – Applies function `f` to each character of string in place
 #### Malloc Functions
 `ft_strdup()` –   allocates memory and duplicates string
 `ft_substr()` –   allocates memory and returns substring of string s
@@ -49,3 +46,4 @@ aliases: libft readme
 `ft_itoa()` –       allocates memory and returns string of integer
 `ft_strndup()` - duplicate string with malloc up to n chars
 `ft_calloc()` –   mallocs memory and initiates all to zero
+`ft_strmapi()` – Applies function `f` to each character of string and returns malloc'd string
