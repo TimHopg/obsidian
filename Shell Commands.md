@@ -76,6 +76,10 @@ aliases: Terminal Shortcuts
 `TAB` - autocomplete
 
 `Ctrl + Y` - paste word that was cut
+#### Updating `$PATH`
+`export PATH="$PATH:/home/ubuntu/.local/bin"`
+Using the `$PATH` variable appends this new path to the end of the existing `PATH` variable.
+
 #### References
 
 
