@@ -53,11 +53,11 @@ aliases: libft readme
 `ft_substr()` –   allocates memory and returns substring of string s (from `start` to length `l`)
 `ft_strjoin()` – allocates memory and returns s1 + s2
 `ft_strtrim()` – allocates memory and returns copy of s1 with set chars trimmed from beginning and end
-`ft_split()` – returns array of strings from s split by char c
+`ft_split()` –     returns array of strings from s split by char c
 `ft_itoa()` –       allocates memory and returns string of integer
 `ft_strndup()` - duplicate string with malloc up to n chars
 `ft_calloc()` –   mallocs memory and initiates all to zero
-`ft_strmapi()` – Applies function `f` to each character of string and returns malloc'd string
+`ft_strmapi()` – applies function `f` to each character of string and returns malloc'd string
 #### Other
-`ft_printf()` - own implementation of `printf()`
+`ft_printf()` -         own implementation of `printf()`
 `get_next_line()` - returns malloc'd next line from file descriptor
