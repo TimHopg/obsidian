@@ -35,7 +35,10 @@
 `CTRL + W` - windows 'leader' key
 	`+ W` - switch window
 	`+ C` - close window
-#
+#### Clipboard
+`dd` - delete line
+`yy` - yank line
+`pp` - put (paste) line
 #### System Clipboard
 `"*y` - yank
 `"*p` - paste
