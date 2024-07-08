@@ -63,6 +63,11 @@ The value of the comma expression equates to the value of the right-most express
 `continue` breaks one iteration of the loop
 #### Pointers
 Always set pointers to `NULL` if not setting to something meaningful.
+#### If Statement Do Nothing
+```C
+if (something)
+	(void)0; // do nothing
+```
 #### References
 [[Pre & Post Decrement Increment]]
 [[Bitwise Operators]]
