@@ -2,7 +2,7 @@
 
 This project uses [[MLX]]
 
-For when I was developing at home on my mac, I used the Remote SSH extension for the first time.
+For when I was developing at home on my mac, I used the Remote SSH extension for the first time. And SSH using terminal too to use my familiar dev environment
 
 `keysym` is more abstract than `keycode`, use it.
 `X11/keysym.h`
