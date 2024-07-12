@@ -107,6 +107,3 @@ _*Has mlx_hook alias._
 [42 Docs](https://harm-smits.github.io/42docs/libs/minilibx/introduction.html)
 
 _2024-06-17 17:12_
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbOTc1MTU4MDQ3XX0=
--->
