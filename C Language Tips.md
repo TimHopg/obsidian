@@ -73,7 +73,7 @@ if (something)
 int Arr[] = { 1, 2, 3, 4, 5 };
 int length = sizeof(Arr) / sizeof(Arr[0]);
 ```
-This method only works when arrays are initiated and calculated in the same function.
+This method only works when arrays are initiated and calculated in the same function. This is because when an array is sent as an argument, it decays to a pointer so `sizeof(Arr)` will calculate 
 #### References
 [[Pre & Post Decrement Increment]]
 [[Bitwise Operators]]
