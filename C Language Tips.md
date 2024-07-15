@@ -68,6 +68,12 @@ Always set pointers to `NULL` if not setting to something meaningful.
 if (something)
 	(void)0; // do nothing
 ```
+#### Length of Array
+```C
+int Arr[] = { 1, 2, 3, 4, 5 };
+int length = sizeof(Arr) / sizeof(Arr[0]);
+```
+This method only works when arrays are initiated and calculated in the same function.
 #### References
 [[Pre & Post Decrement Increment]]
 [[Bitwise Operators]]
