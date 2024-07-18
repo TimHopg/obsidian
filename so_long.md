@@ -15,7 +15,7 @@ Initialising data using `ft_bzero()` or `ft_calloc()` is a good way to ensure no
 Implement this as you go. It becomes complicated if you try and do it afterwards. There will be several points where different memory needs to be freed. Functions that check for the existence of a variable before freeing will help ensure no attempt is made to free memory that hasn't yet been allocated.
 
 #### Bonus
-Used [[rand()]] with 
+Used [[rand()]] with `srand(time(0))` to get enemy to move 
 #### References
 [Harm Smits 42 Docs](https://harm-smits.github.io/42docs/libs/minilibx/introduction.html)
 [42 Cursus Gitbook](https://42-cursus.gitbook.io/guide/rank-02/so_long/understand-so_long)
