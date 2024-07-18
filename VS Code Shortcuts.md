@@ -23,6 +23,7 @@ aliases: vscode
 `Ctrl (alt) + -` - go back (previous file etc)
 
 `Ctrl + L` - highlight line
+`Ctrl + D` - delete forwards
 
 ### Customisation
 `COMMAND: Developer: Inspect Scope` - to edit specific font colours
