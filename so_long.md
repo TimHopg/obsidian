@@ -28,7 +28,8 @@ Transparency or pixels set to `None` does not work on some MLX systems. To get a
 #### Bonus
 Used [[rand()]] with `srand(time(0))` to get enemy to move randomly. `rand()` alone is pseudorandom and will always move the same sequence each time the program is run. It needs a seed from `srand()` which takes a prompt from the `time()` function to be more legitimately random.
 #### Extras
-Remember to `make re` when 
+Remember to `make re` when changing certain aspects of the program. Especially in header files.
+Move function could be refactored to handle enemy and player.
 #### References
 [Harm Smits 42 Docs](https://harm-smits.github.io/42docs/libs/minilibx/introduction.html)
 [42 Cursus Gitbook](https://42-cursus.gitbook.io/guide/rank-02/so_long/understand-so_long)
