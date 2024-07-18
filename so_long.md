@@ -9,6 +9,8 @@ For when I was developing at home on my mac, I used the Remote SSH extension for
 `keycode` is hardware specific. Program instead with `keysym` for more portable code.
 
 `destroy_display` is necessary on Linux architecture (after `destroy_window)
+
+
 #### References
 [Harm Smits 42 Docs](https://harm-smits.github.io/42docs/libs/minilibx/introduction.html)
 [42 Cursus Gitbook](https://42-cursus.gitbook.io/guide/rank-02/so_long/understand-so_long)
