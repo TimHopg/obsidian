@@ -21,8 +21,10 @@ It's a good idea to keep all (or the majority) of game data in one struct for ma
 Implement this as you go. It becomes complicated if you try and do it afterwards. There will be several points where different memory needs to be freed. Functions that check for the existence of a variable before freeing will help ensure no attempt is made to free memory that hasn't yet been allocated.
 #### Fill Function
 Recursively checks each position from each reachable position. Changes the current position to a `*` so a sort of breadcrumb can be left.
+#### XPM Files
+These are human readable text interpretations of images. A legend of characters and their RGB information is included. It is usually in black to white order.
 #### Transparency
-Transparency or pixels set to `None` does not work on some MLX systems. To get around this
+Transparency or pixels set to `None` does not work on some MLX systems. To get around this, images can be written pixel by pixel to a 'master image' using a custom pixel put function. In this function, `None` pixels can be skipped.
 #### Bonus
 Used [[rand()]] with `srand(time(0))` to get enemy to move randomly. `rand()` alone is pseudorandom and will always move the same sequence each time the program is run. It needs a seed from `srand()` which takes a prompt from the `time()` function to be more legitimately random.
 #### References
