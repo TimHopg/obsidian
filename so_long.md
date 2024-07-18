@@ -11,11 +11,18 @@ For when I was developing at home on my mac, I used the Remote SSH extension for
 `destroy_display` is necessary on Linux architecture (after `destroy_window`). And `free(mlx.ptr)` too.
 #### Initialise Data
 Initialising data using `ft_bzero()` or `ft_calloc()` is a good way to ensure no variables are used uninitialised. 
+#### Structs
+It's a good idea to keep all (or the majority) of game data in one struct for management reasons. I recommend using a `tab` or `point` struct which stores an `x` and `y` coordinate field. This way you can pass different `tab` structs to the same functions that will manipulate the coordinate data. 
+* Map size
+* Enemy location
+* Exit Location
+* etc.
 #### Memory Management
 Implement this as you go. It becomes complicated if you try and do it afterwards. There will be several points where different memory needs to be freed. Functions that check for the existence of a variable before freeing will help ensure no attempt is made to free memory that hasn't yet been allocated.
-
+#### Fill Function
+Recursively checks each position from each reachable position. Changes the current position to a `*` so a sort of breadcrumb can be left.
 #### Bonus
-Used [[rand()]] with `srand(time(0))` to get enemy to move 
+Used [[rand()]] with `srand(time(0))` to get enemy to move randomly. `rand()` alone is pseudorandom and will always move the same sequence each time the program is run. It needs a seed from `srand()` which takes a prompt from the `time()` function to be more legitimately random.
 #### References
 [Harm Smits 42 Docs](https://harm-smits.github.io/42docs/libs/minilibx/introduction.html)
 [42 Cursus Gitbook](https://42-cursus.gitbook.io/guide/rank-02/so_long/understand-so_long)
