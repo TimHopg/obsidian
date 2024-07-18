@@ -60,6 +60,6 @@ When printing a binary number in C `0b11110000` an octet. This can be printed as
 Use _XOR_ three times and the values have swapped.
 #### References
 [[Twos Complement]]
-[[Binary]]
+[[Number Systems]]
 
 _2024-06-02 10:05_
