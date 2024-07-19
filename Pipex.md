@@ -23,7 +23,7 @@ line 2
 EOF
 ```
 Works like input redirect `<` but allows user to type the text themselves
-#### access()
+### access()
 `int access(constant char *pathname, int mode)`
 `access()` checks whether the program can access `pathname`.
 `mode` determines which checks are performed.
@@ -81,5 +81,6 @@ While these additional requirements do add complexity, they build upon the funda
 * [[wait]]
 * [[pipe]]
 * [access()]([https://linux.die.net/man/2/access](https://linux.die.net/man/2/access))
+* [[dup2()]]
 
 _2024-07-19 12:53_
