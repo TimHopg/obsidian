@@ -81,7 +81,15 @@ int main(void){
 
 `execve()` executes the program pointed to by `filename`.
 
-`execve()` does not return on success, the calling process is **replaced** by the executed `filename`.
+`execve()` does not return on success, the calling process is **replaced** by the executed `filename` but the PID remains the same.
+### unlink()
+`int unlink(const char *pathname);`
+
+`unlink()` deletes a pathname from the file system. If that name was the last link to a file and no processes have the file open the file is deleted and the space it was using is made available for reuse.
+
+If the name was the last link to a file but any processes still have the file open the file will remain in existence until the last file descriptor referring to it is closed.
+
+On success, `0` is returned. On error, `-1` is returned, and `errno` is set appropriately.
 #### File Descriptors
 In Unix-like operating systems, everything is a file, including standard input (stdin), standard output (stdout), and standard error (stderr). Understanding file descriptors and how they're used for I/O operations is crucial.
 #### Forking Processes
@@ -132,5 +140,6 @@ While these additional requirements do add complexity, they build upon the funda
 * [access()]([https://linux.die.net/man/2/access](https://linux.die.net/man/2/access))
 * [[dup2()]]
 * [dup2()]([https://linux.die.net/man/2/dup2](https://linux.die.net/man/2/dup2))
+* [unlink](https://linux.die.net/man/2/unlink)
 
 _2024-07-19 12:53_
