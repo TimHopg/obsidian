@@ -1,7 +1,7 @@
 #School42 #todo 
 #### Redirects and Pipes
 `<` - input redirect. sends a file descriptor to `stdin (fd0)` which can then be received by a command.
-`>` - output redirect. sends the output of a command to the `stdout (fd1)` which can be routed to a file.
+`>` - output redirect. sends `stdout (fd1)` of a command to a file.
 these both always goes between fd (or file) and a command but can be written `< infile cmd1` which is a bit confusing.
 (`>>`) - append output redirect
 `2>` sends to `stderr (fd2)`
