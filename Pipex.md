@@ -40,6 +40,12 @@ They can be separate by bitwise or operators.
 * If `oldfd` is not a valid fd, the call fails and `newfd` is *NOT* closed
 * If `oldfd` is valid and `newfd` has the same value, `dup2()` does nothing and returns `newfd`.
 They now can be used interchangeably and share the same offset and file status flags. Any changes made to one will affect the other.
+### pipe()
+`int pipe(int pipefd[2]);`
+
+`pipe()` creates a pipe, a unidirectional data channel that can be used for interprocess communication. The array `pipefd` is used to return two file descriptors referring to the ends of the pipe. `pipefd[0]` refers to the read end of the pipe. `pipefd[1]` refers to the write end of the pipe. Data written to the write end of the pipe is buffered by the kernel until it is read from the read end of the pipe
+
+On success, `0` is returned. On error, `-1` is returned, and `errno` is set appropriately.
 #### File Descriptors
 In Unix-like operating systems, everything is a file, including standard input (stdin), standard output (stdout), and standard error (stderr). Understanding file descriptors and how they're used for I/O operations is crucial.
 #### Forking Processes
