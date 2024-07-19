@@ -25,6 +25,7 @@ EOF
 Works like input redirect `<` but allows user to type the text themselves
 ### access()
 `int access(constant char *pathname, int mode)`
+
 `access()` checks whether the program can access `pathname`.
 `mode` determines which checks are performed.
 * `F_OK` checks for file existence
@@ -36,6 +37,7 @@ They can be separate by bitwise or operators.
 `access()` returns `0` if successful or `-1` if an error occurred. `errno` is set.
 ### dup2()
 `int dup2(int oldfd, int newfd);`
+
 `dup2()` makes `newfd` a copy of `oldfd`, closing `newfd` first if necessary.
 * If `oldfd` is not a valid fd, the call fails and `newfd` is *NOT* closed
 * If `oldfd` is valid and `newfd` has the same value, `dup2()` does nothing and returns `newfd`.
@@ -43,9 +45,17 @@ They now can be used interchangeably and share the same offset and file status f
 ### pipe()
 `int pipe(int pipefd[2]);`
 
-`pipe()` creates a pipe, a unidirectional data channel that can be used for interprocess communication. The array `pipefd` is used to return two file descriptors referring to the ends of the pipe. `pipefd[0]` refers to the read end of the pipe. `pipefd[1]` refers to the write end of the pipe. Data written to the write end of the pipe is buffered by the kernel until it is read from the read end of the pipe
+`pipe()` creates a unidirectional data channel that can be used for interprocess communication. The array `pipefd` returns two file descriptors referring to the ends of the pipe. `pipefd[0]` is the read end of the pipe and `pipefd[1]` is the write end of the pipe. Data written to the write end of the pipe is buffered by the kernel until it is read from the read end of the pipe
 
 On success, `0` is returned. On error, `-1` is returned, and `errno` is set appropriately.
+### fork()
+`pid_t fork(void);`
+
+`fork()` creates a new process by duplicating the calling process. The new process, referred to as the `child`, is an exact duplicate of the calling process, referred to as the `parent`, except for in the following [cases](https://linux.die.net/man/2/fork)
+### waitpid()
+`pid_t waitpid(pid_t pid, int *status, int options);`
+
+The `waitpid()` system call suspends execution of the calling process until a child specified by _pid_ argument has changed state. By default, `waitpid()` waits only for terminated children.
 #### File Descriptors
 In Unix-like operating systems, everything is a file, including standard input (stdin), standard output (stdout), and standard error (stderr). Understanding file descriptors and how they're used for I/O operations is crucial.
 #### Forking Processes
