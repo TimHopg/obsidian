@@ -1,9 +1,10 @@
 #School42 #todo 
 #### Redirects and Pipes
-`<` - input redirect. sends a file descriptor to the input of a command.
-`>` - output redirect. sends the output of a command to a file
-these both always goes between fd (or file) and a command
+`<` - input redirect. sends a file descriptor to `stdin (fd0)` which can then be received by a command.
+`>` - output redirect. sends the output of a command to the `stdout (fd1)` which can be routed to a file.
+these both always goes between fd (or file) and a command but can be written `< infile cmd1` which is a bit confusing.
 (`>>`) - append output redirect
+`2>` sends to `stderr (fd2)`
 
 `< file grep a1` = `grep a1 < file`
 `|` - pipe redirects output of one command to the input of the next command
@@ -11,7 +12,6 @@ Pipes connect processes and redirects connect processes with files or file descr
 
 `cmd1 < input.txt | cmd2 > output.txt`
 Separate the commands by the pipe and work out what each side is doing. `input.txt` is being sent to the input of `cmd1` which is then being piped to the input of `cmd2` and `cmd2`'s output is being sent to `output.txt`.
-
 #### File Descriptors
 In Unix-like operating systems, everything is a file, including standard input (stdin), standard output (stdout), and standard error (stderr). Understanding file descriptors and how they're used for I/O operations is crucial.
 #### Forking Processes
