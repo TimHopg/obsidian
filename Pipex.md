@@ -1,14 +1,8 @@
-#School42 
-
-[[fork]] [[PID]] [[wait]] [[pipe]]
-
-
-
-Replicating the functionality of the pipe in the command line in C is a great project for understanding inter-process communication and operating system concepts. Here's an outline of the key areas you should study:
-
-File Descriptors: In Unix-like operating systems, everything is a file, including standard input (stdin), standard output (stdout), and standard error (stderr). Understanding file descriptors and how they're used for I/O operations is crucial.
-
-Forking Processes: The fork() system call is used to create a new process. You'll need to understand how to create child processes and how they inherit file descriptors from the parent process.
+#School42 #todo 
+#### File Descriptors
+In Unix-like operating systems, everything is a file, including standard input (stdin), standard output (stdout), and standard error (stderr). Understanding file descriptors and how they're used for I/O operations is crucial.
+#### Forking Processes
+The fork() system call is used to create a new process. You'll need to understand how to create child processes and how they inherit file descriptors from the parent process.
 
 Executing Commands: Use exec() family of functions (like execl(), execv(), etc.) to execute commands in the child process. This involves loading a new program into the current process space.
 
@@ -45,3 +39,11 @@ Code Organization: As your program becomes more complex, consider organizing you
 Documentation: Document your code thoroughly, especially if you're working on a team or if others might need to understand or extend your code in the future.
 
 While these additional requirements do add complexity, they build upon the fundamental concepts of inter-process communication, file I/O, and process management. By breaking down the problem into smaller tasks and gradually implementing and testing each component, you can build a robust and functional implementation of the pipex command.
+
+#### References
+* [[fork]]
+* [[PID]]
+* [[wait]]
+* [[pipe]]
+
+_2024-07-19 12:53_
