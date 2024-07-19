@@ -54,6 +54,7 @@ Code Organization: As your program becomes more complex, consider organizing you
 Documentation: Document your code thoroughly, especially if you're working on a team or if others might need to understand or extend your code in the future.
 
 While these additional requirements do add complexity, they build upon the fundamental concepts of inter-process communication, file I/O, and process management. By breaking down the problem into smaller tasks and gradually implementing and testing each component, you can build a robust and functional implementation of the pipex command.
+#### Here Document (heredoc)
 
 #### References
 * [[fork]]
