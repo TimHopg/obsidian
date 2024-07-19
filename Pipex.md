@@ -15,7 +15,14 @@ Pipes connect processes and redirects connect processes with files or file descr
 `cmd1 < input.txt | cmd2 > output.txt`
 Separate the commands by the pipe and work out what each side is doing. `input.txt` is being sent to the input of `cmd1` which is then being piped to the input of `cmd2` and `cmd2`'s output is being sent to `output.txt`.
 #### Here Document (heredoc)
-
+Allows the user to specify multiline input directly on the command line or script. Everything between the delimiters is inputed as text (usually EOF).
+```SHELL
+cat << EOF
+line 1
+line 2
+EOF
+```
+Works like input redirect `<` but allows user to type the text themselves
 #### File Descriptors
 In Unix-like operating systems, everything is a file, including standard input (stdin), standard output (stdout), and standard error (stderr). Understanding file descriptors and how they're used for I/O operations is crucial.
 #### Forking Processes
