@@ -14,6 +14,8 @@ Pipes connect processes and redirects connect processes with files or file descr
 
 `cmd1 < input.txt | cmd2 > output.txt`
 Separate the commands by the pipe and work out what each side is doing. `input.txt` is being sent to the input of `cmd1` which is then being piped to the input of `cmd2` and `cmd2`'s output is being sent to `output.txt`.
+#### Here Document (heredoc)
+
 #### File Descriptors
 In Unix-like operating systems, everything is a file, including standard input (stdin), standard output (stdout), and standard error (stderr). Understanding file descriptors and how they're used for I/O operations is crucial.
 #### Forking Processes
@@ -54,7 +56,6 @@ Code Organization: As your program becomes more complex, consider organizing you
 Documentation: Document your code thoroughly, especially if you're working on a team or if others might need to understand or extend your code in the future.
 
 While these additional requirements do add complexity, they build upon the fundamental concepts of inter-process communication, file I/O, and process management. By breaking down the problem into smaller tasks and gradually implementing and testing each component, you can build a robust and functional implementation of the pipex command.
-#### Here Document (heredoc)
 
 #### References
 * [[fork]]
