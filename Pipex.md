@@ -34,6 +34,12 @@ The following check for existence plus:
 * `X_OK` - execute permissions
 They can be separate by bitwise or operators.
 `access()` returns `0` if successful or `-1` if an error occurred. `errno` is set.
+### dup2()
+`int dup2(int oldfd, int newfd);`
+`dup2()` makes `newfd` a copy of `oldfd`, closing `newfd` first if necessary.
+* If `oldfd` is not a valid fd, the call fails and `newfd` is *NOT* closed
+* If `oldfd` is valid and `newfd` has the same value, `dup2()` does nothing and returns `newfd`.
+They now can be used interchangeably and share the same offset and file status flags. Any changes made to one will affect the other.
 #### File Descriptors
 In Unix-like operating systems, everything is a file, including standard input (stdin), standard output (stdout), and standard error (stderr). Understanding file descriptors and how they're used for I/O operations is crucial.
 #### Forking Processes
@@ -82,5 +88,6 @@ While these additional requirements do add complexity, they build upon the funda
 * [[pipe]]
 * [access()]([https://linux.die.net/man/2/access](https://linux.die.net/man/2/access))
 * [[dup2()]]
+* [dup2()]([https://linux.die.net/man/2/dup2](https://linux.die.net/man/2/dup2))
 
 _2024-07-19 12:53_
