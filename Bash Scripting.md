@@ -9,6 +9,7 @@
 `&&` - run second command only if first is successful
 `&` - runs second process even before first has finished
 `|` - pipe sends output from one command to input of the next. fewer pipes are better for efficiency
+`<` - redirects to the `stdin` (`< file1`)
 `ifthis && echo "yes" || echo "no"` - && if true and || 'or' if not
 ### Examples
 #### Print each filename

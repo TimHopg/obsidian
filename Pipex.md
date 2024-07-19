@@ -1,4 +1,6 @@
 #School42 #todo 
+
+
 #### File Descriptors
 In Unix-like operating systems, everything is a file, including standard input (stdin), standard output (stdout), and standard error (stderr). Understanding file descriptors and how they're used for I/O operations is crucial.
 #### Forking Processes
