@@ -27,22 +27,22 @@ Works like input redirect `<` but allows user to type the text themselves
 In Unix-like operating systems, everything is a file, including standard input (stdin), standard output (stdout), and standard error (stderr). Understanding file descriptors and how they're used for I/O operations is crucial.
 #### Forking Processes
 The fork() system call is used to create a new process. You'll need to understand how to create child processes and how they inherit file descriptors from the parent process.
-
-Executing Commands: Use exec() family of functions (like execl(), execv(), etc.) to execute commands in the child process. This involves loading a new program into the current process space.
-
-Piping: Pipes are used to connect the output of one process to the input of another. You'll need to understand how to create a pipe using the pipe() system call, how to redirect standard input and output using dup2(), and how to close file descriptors appropriately.
-
-Parent-Child Communication: After forking, the parent and child processes communicate through the pipe. You'll need to understand how to write data into the pipe from one process and read it from another.
-
-Error Handling: Proper error handling is essential in systems programming. Learn how to check for errors returned by system calls and handle them appropriately.
-
-Signal Handling: While not directly related to pipes, signal handling is important for robustness. You may need to handle signals such as SIGPIPE to gracefully handle situations where a pipe is broken.
-
-Concurrency and Synchronization: If you plan to work with multiple pipes or multiple processes, you'll need to understand concepts like race conditions and synchronization mechanisms (e.g., mutexes, semaphores) to ensure proper coordination between processes.
-
-Memory Management: Understand memory allocation and deallocation, especially if you're dynamically allocating memory for buffers or data structures related to your pipe implementation.
-
-Testing and Debugging: Finally, learn techniques for testing your code thoroughly and debugging any issues that arise. Techniques like using printf statements, strace, valgrind, or gdb can be immensely helpful.
+#### Executing Commands
+Use `exec()` family of functions (like `execl()`, `execv()`, etc.) to execute commands in the child process. This involves loading a new program into the current process space.
+#### Piping
+Pipes are used to connect the output of one process to the input of another. You'll need to understand how to create a pipe using the `pipe()` system call, how to redirect standard input and output using `dup2()`, and how to close file descriptors appropriately.
+#### Parent-Child Communication
+After forking, the parent and child processes communicate through the pipe. You'll need to understand how to write data into the pipe from one process and read it from another.
+#### Error Handling
+Proper error handling is essential in systems programming. Learn how to check for errors returned by system calls and handle them appropriately.
+#### Signal Handling
+While not directly related to pipes, signal handling is important for robustness. You may need to handle signals such as SIGPIPE to gracefully handle situations where a pipe is broken.
+#### Concurrency and Synchronization
+If you plan to work with multiple pipes or multiple processes, you'll need to understand concepts like race conditions and synchronization mechanisms (e.g., mutexes, semaphores) to ensure proper coordination between processes.
+#### Memory Management
+Understand memory allocation and deallocation, especially if you're dynamically allocating memory for buffers or data structures related to your pipe implementation.
+#### Testing and Debugging
+Finally, learn techniques for testing your code thoroughly and debugging any issues that arise. Techniques like using printf statements, strace, valgrind, or gdb can be immensely helpful.
 
 Start with basic examples of forking processes and using pipes, then gradually build up your understanding and implementation. Don't hesitate to consult the Unix manual pages (man) and online resources for further guidance. Good luck with your project!
 
