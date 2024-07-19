@@ -1,6 +1,9 @@
 #School42 #todo 
 
-
+`<` - input redirect. always goes betwee
+`< file grep a1` = `grep a1 < file`
+`|` - pipe redirects output of one command to the input of the next command
+`>` - output redirect. 
 #### File Descriptors
 In Unix-like operating systems, everything is a file, including standard input (stdin), standard output (stdout), and standard error (stderr). Understanding file descriptors and how they're used for I/O operations is crucial.
 #### Forking Processes
