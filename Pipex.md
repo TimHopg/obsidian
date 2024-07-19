@@ -33,7 +33,7 @@ The following check for existence plus:
 * `W_OK` - write permissions
 * `X_OK` - execute permissions
 They can be separate by bitwise or operators.
-`access()` returns `0` if successful or `-1` if an error occurred. `errno` is set
+`access()` returns `0` if successful or `-1` if an error occurred. `errno` is set.
 #### File Descriptors
 In Unix-like operating systems, everything is a file, including standard input (stdin), standard output (stdout), and standard error (stderr). Understanding file descriptors and how they're used for I/O operations is crucial.
 #### Forking Processes
@@ -80,5 +80,6 @@ While these additional requirements do add complexity, they build upon the funda
 * [[PID]]
 * [[wait]]
 * [[pipe]]
+* [access()]([https://linux.die.net/man/2/access](https://linux.die.net/man/2/access))
 
 _2024-07-19 12:53_
