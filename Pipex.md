@@ -76,6 +76,12 @@ int main(void){
         n--;
     }}
 ```
+### execve()
+`int execve(const char *filename, char *const argv[], char *const envp[]);`
+
+`execve()` executes the program pointed to by `filename`.
+
+`execve()` does not return on success, the calling process is **replaced** by the executed `filename`.
 #### File Descriptors
 In Unix-like operating systems, everything is a file, including standard input (stdin), standard output (stdout), and standard error (stderr). Understanding file descriptors and how they're used for I/O operations is crucial.
 #### Forking Processes
@@ -121,6 +127,7 @@ While these additional requirements do add complexity, they build upon the funda
 * [[fork]]
 * [[PID]]
 * [[wait]]
+* [wait & waitpid](https://linux.die.net/man/2/wait)
 * [[pipe]]
 * [access()]([https://linux.die.net/man/2/access](https://linux.die.net/man/2/access))
 * [[dup2()]]
