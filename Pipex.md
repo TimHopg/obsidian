@@ -56,6 +56,26 @@ On success, `0` is returned. On error, `-1` is returned, and `errno` is set appr
 `pid_t waitpid(pid_t pid, int *status, int options);`
 
 The `waitpid()` system call suspends execution of the calling process until a child specified by _pid_ argument has changed state. By default, `waitpid()` waits only for terminated children.
+``` C
+int pid;
+pid = fork();
+waitpid(pid);
+```
+### wait()
+`pid_t wait(int *status);`
+
+The `wait()` system call suspends execution of the calling process until one of its children terminates.
+```C
+// waiting for multiple children
+int main(void){
+	int status;
+
+    while (n > 0)
+    {
+        wait(&status);
+        n--;
+    }}
+```
 #### File Descriptors
 In Unix-like operating systems, everything is a file, including standard input (stdin), standard output (stdout), and standard error (stderr). Understanding file descriptors and how they're used for I/O operations is crucial.
 #### Forking Processes
