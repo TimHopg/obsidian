@@ -6,6 +6,8 @@ these both always goes between fd (or file) and a command but can be written `< 
 (`>>`) - append output redirect
 `2>` sends to `stderr (fd2)`
 
+`command > output.txt 2>&1` - redirects output of standard out and standard error to same file. 
+
 `< file grep a1` = `grep a1 < file`
 `|` - pipe redirects output of one command to the input of the next command
 Pipes connect processes and redirects connect processes with files or file descriptors.
