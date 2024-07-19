@@ -26,7 +26,14 @@ Works like input redirect `<` but allows user to type the text themselves
 #### access()
 `int access(constant char *pathname, int mode)`
 `access()` checks whether the program can access `pathname`.
-
+`mode` determines which checks are performed.
+* `F_OK` checks for file existence
+The following check for existence plus:
+* `R_OK` - read permissions
+* `W_OK` - write permissions
+* `X_OK` - execute permissions
+They can be separate by bitwise or operators.
+`access()` returns `0` if successful or `-1` if an error occurred. `errno` is set
 #### File Descriptors
 In Unix-like operating systems, everything is a file, including standard input (stdin), standard output (stdout), and standard error (stderr). Understanding file descriptors and how they're used for I/O operations is crucial.
 #### Forking Processes
