@@ -111,9 +111,6 @@ Understand memory allocation and deallocation, especially if you're dynamically 
 #### Testing and Debugging
 Finally, learn techniques for testing your code thoroughly and debugging any issues that arise. Techniques like using printf statements, strace, valgrind, or gdb can be immensely helpful.
 
-Start with basic examples of forking processes and using pipes, then gradually build up your understanding and implementation. Don't hesitate to consult the Unix manual pages (man) and online resources for further guidance. Good luck with your project!
-
-The additional requirements you mentioned do add some complexity to your project, but the core concepts remain the same. Here's how you might adjust your approach:
 
 Parsing Command-Line Arguments: You'll need to parse the command-line arguments to identify the input file, output file, commands, and any redirection operators (<<, >>). This may involve using libraries like getopt() or manually parsing the arguments.
 
