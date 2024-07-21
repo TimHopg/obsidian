@@ -6,7 +6,9 @@ aliases: fork
 Requires `#include <unistd.h>`
 Takes in an array of two integers. Two file descriptors. _0 is read and 1 is write_
 
-Fork splits the process into two.  `0` is the new process (the child process) and ``
+Fork splits the process into two.  `0` is the new process (the child process) and the process id of the new process to the old process. So the non-zero PID will be the main or the previous process.
+
+All processes have an id => PID.
 
 ```C#
 #include <unistd.h>
