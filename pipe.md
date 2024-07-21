@@ -1,6 +1,12 @@
+---
+aliases: fork
+---
 #todo #Shell #C_Language #Programming 
 
+Requires `#include <unistd.h>`
 Takes in an array of two integers. Two file descriptors. _0 is read and 1 is write_
+
+Fork splits the process into two.  `0` is the new process (the child process) and ``
 
 ```C#
 #include <unistd.h>
