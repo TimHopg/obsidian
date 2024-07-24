@@ -40,7 +40,7 @@ done
 for arg in "$@" ; do echo "<$arg>" ; done
 ```
 #### References
-* [[Shell Commands]]
-* [[Pipex]]
+* [[Shell Commands 1]]
+* [[Pipex 1]]
 
 _2024-05-13 22:52_

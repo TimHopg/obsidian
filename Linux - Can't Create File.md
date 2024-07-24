@@ -10,8 +10,8 @@ Possible reasons:
 - High CPU/Memory Consumption
 	- `top`
 - Partitioning Issues
-- [[PID]] Exhaustion
-	- [[fork]] and [[exec]]
+- [[PID 1]] Exhaustion
+	- [[fork 1]] and [[exec]]
 #### References
 
 

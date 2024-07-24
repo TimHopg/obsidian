@@ -11,6 +11,6 @@ Define keywords to accept flags during compilation.
 `gcc -D BUFFER_SIZE=1024 your_program.c -o your_program`
 `-D` - defines a macro
 
-[[Argc Argv]] takes in arguments on the command line.
+[[Argc Argv 1]] takes in arguments on the command line.
 #### References
 [[Preprocessor]]

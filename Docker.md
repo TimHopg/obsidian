@@ -57,6 +57,6 @@ Add files to `.dockerignore` like git
 `docker pull ...`
 #### References
 
-[[Virtual Machine]]
+[[Virtual Machine 1]]
 
 _2024-05-25 10:50_

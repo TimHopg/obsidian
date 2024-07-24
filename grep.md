@@ -9,6 +9,6 @@ Useful for pattern matching, data extraction etc.
 `^` - start of line
 `$` - end of line
 #### References
-[[Shell Commands]]
+[[Shell Commands 1]]
 
 _2024-05-13 22:49_

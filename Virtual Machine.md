@@ -170,11 +170,11 @@ Virtual Box will move the request to port `4242` so it's the same
 `ssh thopgood@localhost -p 4243` - connects to the virtual machine
 #### Creating the Script
 1. __ARCHITECTURE:__ `uname -a`
-	* unix name prints details about the machine (`-a` - all) [[uname]]
+	* unix name prints details about the machine (`-a` - all) [[uname 1]]
 2. __PHYSICAL CORES:__ `grep "physical id" /proc/cpuinfo | sort-u | wc -l`
 	* no. of physical cores searches for phrase in folder
 	* [[sort]] -u (unique) ignores duplicates
-	* pipes to word count which returns number of lines [[wc]] [[grep]]
+	* pipes to word count which returns number of lines [[wc 1]] [[grep 1]]
 3. __VIRTUAL CORES:__ `grep ^processor /proc/cpuinfo | wc -l`
 	* lines beginning with processor, pipes to word count (lines)
 	* no. of virtual cores
@@ -182,11 +182,11 @@ Virtual Box will move the request to port `4242` so it's the same
 	* total memory field
 	* `--mega` - for megabytes (MB) otherwise `-M` returns mebibytes (MiB) which are slightly smaller
 1. __RAM USED:__ `free --mega | awk '$1 == "Mem:" {print $3}`
-	* [[free]] displays free and used memory then pipes to [[awk]] which if 1st ($1) field is equal to string prints what's in the 3rd ($3) field (used memory). in `--mega`bytes as requested. 
+	* [[free 1]] displays free and used memory then pipes to [[awk 1]] which if 1st ($1) field is equal to string prints what's in the 3rd ($3) field (used memory). in `--mega`bytes as requested. 
 2. __RAM PERCENTAGE:__ `free --mega | awk '$1 == "Mem:" {printf("(%.2f%%)\n", $3/$2*100)}'`
 	* used memory / total memory * 100 for percentage. `%%` to print percent `%.2f` - 2 decimal places
 3. __DISK MEMORY TOTAL:__  `df -BG | awk '$1 ~ /^\/dev\// && $NF != "/boot" {tot += $2} END {print tot}'`
-	* [[du|df]] (disk filesystem) `-BG` - blocks in gigabytes (not gibis)
+	* [[du 1|df]] (disk filesystem) `-BG` - blocks in gigabytes (not gibis)
 	* `awk` command checks if `$1` first field matches (`~`) the following REGEX
 	* `/^\/dev\//` - a forward slash at each end delimits the expression, `^` caret states beginning of field, `\/` backslash escapes the forward slash = `"^/dev/"`
 	* i.e. any entry in the first field that starts with `"/dev/"`
@@ -197,7 +197,7 @@ Virtual Box will move the request to port `4242` so it's the same
 	* see disk memory total
 2. __DISK MEMORY PERCENTAGE:__ `printf "%.0f" "$(echo "scale=4; (($disk_use / 1024) / $disk_tot) * 100" | bc)"`
 	* `printf "%.0f"` - rounds to nearest whole percentage point
-	* `echo` sends following line to [[bc]] (basic calculator) including `scale=4` - accuracy of 4 decimal places
+	* `echo` sends following line to [[bc 1]] (basic calculator) including `scale=4` - accuracy of 4 decimal places
 	* Uses previously assigned variables `disk_use` & `disk_tot`
 3. __CPU LOAD:__ `top -bn1 | grep '^%Cpu' | awk '{printf("%.1f%%"), $2 + $4}'`
 	* [[top]] (table of processes). `-b` batch mode `-n1` - 1 iteration of processes
@@ -401,8 +401,8 @@ vmwgfx error - change display settings to VboxVGA
 `free --mega = megabytes`
 `tmpfs` - Temporary File System - stored in RAM not on SSD or HDD. Fast but volatile. Do not include in total disk space
 #### References
-[[born2beroot]]
-[[Shell Commands]]
+[[born2beroot 1]]
+[[Shell Commands 1]]
 [PasqualeRossi Guide](https://github.com/pasqualerossi/Born2BeRoot-Guide)
 [GE Martin Guide](https://github.com/gemartin99/Born2beroot-Tutorial/blob/main/README_EN.md)
 [Mcombeau bonus](https://github.com/mcombeau/Born2beroot/blob/main/guide/bonus_debian.md)

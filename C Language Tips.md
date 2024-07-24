@@ -4,7 +4,7 @@
 #### Constants
 `const float PI = 3.1415` - consts are read only usually declared in capitals
 #### Function Points
-[[Function Pointers]] can be type cast to improve readability
+[[Function Pointers 1]] can be type cast to improve readability
 #### Break and Continue
 `break` exits the loop.
 `continue` breaks one iteration (in the loop) if a specified condition occurs
@@ -78,9 +78,9 @@ This method only works when arrays are initiated and calculated in the same func
 Has an internal buffer so prints once program has run.
 Use `fflush(stdout)` after the call to `printf()` for it to print immediately.
 #### References
-[[Pre & Post Decrement Increment]]
-[[Bitwise Operators]]
-[[Code Structure]]
+[[Pre & Post Decrement Increment 1]]
+[[Bitwise Operators 1]]
+[[Code Structure 1]]
 [[Call By Reference vs Call By Value]]
 
 _2024-05-27 15:04_

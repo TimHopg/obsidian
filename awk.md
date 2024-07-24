@@ -11,6 +11,6 @@ Powerful text processing tool
 `{}` - action pairs. carries out what's in the braces if the first pattern is true
 `awk '$1 == "foo" { print }' input.txt > output.txt` - if 1st field is equal to foo it will print the entire line, read from input.txt to output.txt
 #### References
-[[Regex]]
+[[Regex 1]]
 
 _2024-05-15 21:48_

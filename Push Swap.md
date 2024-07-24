@@ -43,7 +43,7 @@ A size of three can be sorted in 2 operations at worst. 1 at best.
 | --- | ---- | --- | ---- | --- |
 | 3   |      | 1   |      | 2   |
 | 2   |      | 2   |      | 3   |
-See more: [[Push Swap probability grid]]
+See more: [[Push Swap probability grid 1]]
 
 Step 1 - push top two elements from  _A -> B_ .
 These elements are non-discriminatory because we just need to have a max and min value for _B_.

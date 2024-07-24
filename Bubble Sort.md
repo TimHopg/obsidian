@@ -2,7 +2,7 @@
 
 Swapping numbers if out of order
 
-[[Big O notation]] On² (Ωn Θn²)
+[[Big O notation 1]] On² (Ωn Θn²)
 
 
 ```c

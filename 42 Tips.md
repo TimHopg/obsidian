@@ -6,9 +6,9 @@
 * Search slack
 * Grademe
 	* `bash -c "$(curl https://grademe.fr)"
-* [[The Norm]]
-* [[Ubuntu]]
-* [[Francinette]]
+* [[The Norm 1]]
+* [[Ubuntu 1]]
+* [[Francinette 1]]
 * [42 C Formatter](https://github.com/cacharle/c_formatter_42.vim)
 * [42tools.me](https://www.42tools.me/)
 * 42 Email
@@ -19,5 +19,5 @@
 * [Installette](https://github.com/Kuninoto/installette) - a collection of 42 tools
 * [42 CLI](https://github.com/herbievine/42-cli)
 #### Tests
-* [[printf() tests]]
-* [[Testing strmapi()]]
+* [[printf() tests 1]]
+* [[Testing strmapi() 1]]

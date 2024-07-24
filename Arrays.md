@@ -24,6 +24,6 @@ for (i = 0; i < 2; i++) {
 }
 ```
 #### References
-[[Data Structures]]
+[[Data Structures 1]]
 
 _2024-05-27 15:32_

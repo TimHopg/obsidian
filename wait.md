@@ -24,6 +24,6 @@ Wait blocks the calling process until one of its child processes exits or a sign
 
 
 #### References
-[[Pipex]] [[fork]]
+[[Pipex 1]] [[fork 1]]
 
 _2024-05-25 12:11_

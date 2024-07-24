@@ -52,4 +52,4 @@ int main(int a, char *av[])
 ```
 
 #### References
-[[Linked Lists]]
+[[Linked Lists 1]]

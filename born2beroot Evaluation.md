@@ -26,7 +26,7 @@ A: SSH, also known as Secure Shell or Secure Socket Shell, is a network protocol
 *`$ sudo adduser username user42`*
 `assign new user to sudo and user42 groups`
 ##### Q: How your script works?
-A: [[born2beroot]]
+A: [[born2beroot 1]]
 ### Part two: What to check? 
 
 |     |                                   |                                                              |
@@ -73,4 +73,4 @@ To stop script running on boot you just need to remove or commit the following l
 `@reboot /path/to/monitoring.sh
 
 #### References
-[[born2beroot]]
+[[born2beroot 1]]

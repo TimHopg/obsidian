@@ -110,30 +110,21 @@ If you plan to work with multiple pipes or multiple processes, you'll need to un
 Understand memory allocation and deallocation, especially if you're dynamically allocating memory for buffers or data structures related to your pipe implementation.
 #### Testing and Debugging
 Finally, learn techniques for testing your code thoroughly and debugging any issues that arise. Techniques like using printf statements, strace, valgrind, or gdb can be immensely helpful.
-
-
-Parsing Command-Line Arguments: You'll need to parse the command-line arguments to identify the input file, output file, commands, and any redirection operators (<<, >>). This may involve using libraries like getopt() or manually parsing the arguments.
-
-Redirection Operators: Handle redirection operators (<<, >>) by opening and closing files appropriately. For <<, you'll need to read from the file until a specified delimiter is encountered. For >>, you'll need to append output to the file instead of overwriting it.
-
-Handling Multiple Pipes: Extend your implementation to handle multiple pipes by creating additional pipes and forking processes as needed. Each command in the pipeline will have its own input and output redirected appropriately.
-
-Error Handling and Edge Cases: Be sure to handle errors and edge cases robustly. This includes checking for the existence of files, permissions, handling cases where commands or files are missing, etc.
-
-Testing: Test your program thoroughly with various input scenarios, including different combinations of commands, files, and redirection operators. Automated testing can be particularly useful here to ensure your program behaves correctly in various scenarios.
-
-Code Organization: As your program becomes more complex, consider organizing your code into separate functions or modules to improve readability and maintainability.
-
-Documentation: Document your code thoroughly, especially if you're working on a team or if others might need to understand or extend your code in the future.
-
-While these additional requirements do add complexity, they build upon the fundamental concepts of inter-process communication, file I/O, and process management. By breaking down the problem into smaller tasks and gradually implementing and testing each component, you can build a robust and functional implementation of the pipex command.
-
+#### Error Handling and Edge Cases
+Checking for the existence of files, permissions, handling cases where commands or files are missing, etc. Test with different combinations of commands, files, and redirection operators. Automated testing can be particularly useful here to ensure your program behaves correctly in various scenarios.
+## Project
+To avoid zombie/orphan processes, it's important for all parent processes to `wait()` until the child processes have terminated.
+When using multiple forks, processes may have more than one child process. So `wait(NULL)` by itself may not work correctly. Instead use:
+```C
+while (wait(NULL) != -1 && errno != ECHILD)
+	(void)0;
+```
 #### References
-* [[fork]]
-* [[PID]]
-* [[wait]]
+* [[fork 1]]
+* [[PID 1]]
+* [[wait 1]]
 * [wait & waitpid](https://linux.die.net/man/2/wait)
-* [[pipe]]
+* [[pipe 1]]
 * [access()]([https://linux.die.net/man/2/access](https://linux.die.net/man/2/access))
 * [[dup2()]]
 * [dup2()]([https://linux.die.net/man/2/dup2](https://linux.die.net/man/2/dup2))

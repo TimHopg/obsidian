@@ -3,60 +3,60 @@ aliases: Terminal Shortcuts
 ---
 #todo #Shell 
 
-* [[awk]] - text manipulation
-* [[alias]]
-* [[Manual search|apropros]] \<keyword\> - man pages and descriptions with keyword
-* [[ar]] - Archive
+* [[awk 1]] - text manipulation
+* [[alias 1]]
+* [[Manual search 1|apropros]] \<keyword\> - man pages and descriptions with keyword
+* [[ar 1]] - Archive
 * [[bash]] - run
-* [[bat]] - like [[Cat]] (concatenate) but on steroids
-* [[bc]] - basic calculator
-* [[Change permissions|chmod]] - change mode (permissions)
+* [[bat 1]] - like [[Cat]] (concatenate) but on steroids
+* [[bc 1]] - basic calculator
+* [[Change permissions 1|chmod]] - change mode (permissions)
 * [[cmp]] - compares two files byte by byte
 * [[cp]] - copy
 * [[curl]] - client for URLs
-* [[du|df]] - disk free
+* [[du 1|df]] - disk free
 * [[diff]] - displays differences between files
-* [[du]] - disk usage
-* [[echo]] - echoes text/strings
+* [[du 1]] - disk usage
+* [[echo 1]] - echoes text/strings
 * [[env]] - set environment and execute command or print environment
-* [[find]] - find
-* [[free]] - displays free and used memory
+* [[find 1]] - find
+* [[free 1]] - displays free and used memory
 * [[fzf]] - fuzzy find
-* [[grep]] - search and match text patterns (global regular expression print)
+* [[grep 1]] - search and match text patterns (global regular expression print)
 * [[head]] - Cats first ten lines of files. See [[Tail]].
-* [[ifconfig]] - displays network configuration (interface config)
+* [[ifconfig 1]] - displays network configuration (interface config)
 * [[less]] - Displays results one page at a time
-* [[Symbolic link|ln]] - Link (symbolic)
-* [[ls]] - list
-* [[ps|lsof]] - list open files
-* [[Manual search|man]] - manuals
+* [[Symbolic link 1|ln]] - Link (symbolic)
+* [[ls 1]] - list
+* [[ps 1|lsof]] - list open files
+* [[Manual search 1|man]] - manuals
 * [[mkdir]] - make directory
 * [[mv]] - move / rename (`mv ..` - move to parent directory)
 * [[ncdu]] - NCurse's disk utility
-* [[nm]] - Name mangler. Dumps symbol table from binary file
+* [[nm 1]] - Name mangler. Dumps symbol table from binary file
 * [[open]] - open -a application
-* [[patch]] - For patching diff files
+* [[patch 1]] - For patching diff files
 * [[pwd]] - print working directory
-* [[ps]] - process status
+* [[ps 1]] - process status
 * [[rg]] - ripgrep
 * [[rm]] - remove ([[rmdir]] - remove directory)
 * [[sed]] - Stream editor. Text manipulation tool.
 * [[shutdown]] - `shutdown -h now` - `-h` stops hard disks
 * [[sort]] - sorts alphabetically (or other)
-* [[stat]] - statistics
+* [[stat 1]] - statistics
 * [[su]] - switch user
 * [[sudo]] - super user do
-* [[tar]] - tarball (compressed files)
+* [[tar 1]] - tarball (compressed files)
 * [[tail]] - Cats last ten lines of a file. See [[Head]].
-* [[time]] - times
-* [[touch]] - creates and modifies timestamps of files
+* [[time 1]] - times
+* [[touch 1]] - creates and modifies timestamps of files
 * [[type]] - shows what would be executed if typed (aliases etc.)
-* [[ulimit]] - User limits
-* [[uname]] - Unix name - prints details about machine and O/S
+* [[ulimit 1]] - User limits
+* [[uname 1]] - Unix name - prints details about machine and O/S
 * [[uniq]] - unique elements only (must be [[sort]]ed)
 * [[wall]] - write all. sends message to all users logged in
 * [[who]] - shows who is logged on
-* [[wc]] - word count
+* [[wc 1]] - word count
 * [[xev]] - display keycode info etc.
 
 `.` - current directory

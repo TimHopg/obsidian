@@ -1,6 +1,6 @@
 #Memory #C_Language 
 
-Leaks is a [[Valgrind]] Mac equivalent
+Leaks is a [[Valgrind 1]] Mac equivalent
 
 `-g symbols identify error lines
 

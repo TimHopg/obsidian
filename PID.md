@@ -7,13 +7,13 @@ Every process has an ID. A number unique to that process.
 [[getppid]]() - returns the process's parent ID
 
 If the parent process terminates before the child has had a chance to, a new parent id will be assigned to the child, it will be a zombie process. It is important to _wait for child processes to finish_ so you don't have memory leaks:
-`wait(NULL)` - only need this and not the code below because [[wait]] waits for child processes to finish.
+`wait(NULL)` - only need this and not the code below because [[wait 1]] waits for child processes to finish.
 
 ```C
 if (id != 0)
 	wait(NULL);
 ```
 #### References
-[[Pipex]] [[wait]] [[fork]]
+[[Pipex 1]] [[wait 1]] [[fork 1]]
 
 _2024-05-25 14:13_
