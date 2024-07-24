@@ -14,6 +14,6 @@ if (id != 0)
 	wait(NULL);
 ```
 #### References
-[[Pipex 1]] [[wait 1]] [[fork 1]]
+[[Pipex]] [[wait]] [[fork]]
 
 _2024-05-25 14:13_

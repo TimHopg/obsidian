@@ -120,11 +120,11 @@ while (wait(NULL) != -1 && errno != ECHILD)
 	(void)0;
 ```
 #### References
-* [[fork 1]]
-* [[PID 1]]
-* [[wait 1]]
+* [[fork]]
+* [[PID]]
+* [[wait]]
 * [wait & waitpid](https://linux.die.net/man/2/wait)
-* [[pipe 1]]
+* [[pipe]]
 * [access()]([https://linux.die.net/man/2/access](https://linux.die.net/man/2/access))
 * [[dup2()]]
 * [dup2()]([https://linux.die.net/man/2/dup2](https://linux.die.net/man/2/dup2))

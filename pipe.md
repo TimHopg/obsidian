@@ -78,6 +78,8 @@ int main(int argc, char **argv)
 }
 ```
 #### References
-[[Pipex 1]] [[wait 1]] [[fork 1]]
+[[Pipex]]
+[[wait]]
+[[fork]]
 
 _2024-05-25 19:08_
