@@ -73,4 +73,4 @@ To stop script running on boot you just need to remove or commit the following l
 `@reboot /path/to/monitoring.sh
 
 #### References
-[[born2beroot 1]]
+[[born2beroot]]

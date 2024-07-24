@@ -7,4 +7,4 @@
 5. Dynamic programming
 6. Common problem-solving patterns
 
-See [[Data Structures 1]]
+See [[Data Structures]]

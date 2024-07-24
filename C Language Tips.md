@@ -78,9 +78,9 @@ This method only works when arrays are initiated and calculated in the same func
 Has an internal buffer so prints once program has run.
 Use `fflush(stdout)` after the call to `printf()` for it to print immediately.
 #### References
-[[Pre & Post Decrement Increment 1]]
-[[Bitwise Operators 1]]
-[[Code Structure 1]]
+[[Pre & Post Decrement Increment]]
+[[Bitwise Operators]]
+[[Code Structure]]
 [[Call By Reference vs Call By Value]]
 
 _2024-05-27 15:04_

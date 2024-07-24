@@ -19,5 +19,5 @@
 * [Installette](https://github.com/Kuninoto/installette) - a collection of 42 tools
 * [42 CLI](https://github.com/herbievine/42-cli)
 #### Tests
-* [[printf() tests 1]]
-* [[Testing strmapi() 1]]
+* [[printf() tests]]
+* [[Testing strmapi()]]

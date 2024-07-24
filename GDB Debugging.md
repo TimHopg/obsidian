@@ -16,6 +16,6 @@ Compile with `-g` flag
 - `gdb ./program_that_crashes ./core_dump` - include offending program and core dump
 
 #### References
-[[LLDB 1]] is mac equivalent
+[[LLDB]] is mac equivalent
 
 _2024-05-24 19:45_

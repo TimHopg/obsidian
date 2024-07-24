@@ -10,6 +10,6 @@ add to:
 
 `unalias alias_name`
 #### References
-[[Shell Commands 1]]
+[[Shell Commands]]
 
 _2024-05-13 21:23_

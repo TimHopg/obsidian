@@ -44,7 +44,7 @@ The project's `.h` file can `#include` the `libft.h` file. When the `.o` files a
 
 So `Iinclude` during the `.o` creation and `-L libft -lft` during the linking phase.
 #### References
-[[Makefile 1]]
-[[C Language Tips 1]]
+[[Makefile]]
+[[C Language Tips]]
 
 _2024-06-08 13:55_
