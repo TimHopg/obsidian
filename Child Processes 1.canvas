@@ -1,0 +1,17 @@
+{
+	"nodes":[
+		{"id":"8c35467122fd3961","type":"text","text":"Parent Process (1)\nid1 = x\nid 2 = z","x":-1960,"y":-460,"width":257,"height":94,"color":"2"},
+		{"id":"5feba57069dffd4b","type":"text","text":"Child Process (1) __x__\nid 1 = 0\nid 2 = y","x":-1960,"y":-338,"width":257,"height":94,"color":"3"},
+		{"id":"355ad6414ee8dc75","type":"text","text":"Grandchild Process (2) __y__\nid 1 = 0\nid 2 = 0","x":-1960,"y":-214,"width":257,"height":94,"color":"3"},
+		{"id":"9f0aa8bcdbe23ba3","type":"text","text":"Child Process (2) __z__\nid 1 = x\nid 2 = 0","x":-1674,"y":-338,"width":254,"height":94,"color":"3"},
+		{"id":"c49fcd79493e578f","type":"text","text":"[[PID 1]]\n[[wait 1]]\n","x":-1544,"y":-460,"width":124,"height":60},
+		{"id":"955ce8296637359f","x":-1960,"y":-80,"width":286,"height":300,"type":"text","text":"If a process has no IDs set by fork, then it must be a child of a child of another process.\nProcesses with (1) are results of the first fork and processes (2) are the results of the second fork. \nWhen a parent is created, it is given an id, in this case  and y."},
+		{"id":"734aa6890ce95930","x":-1640,"y":-80,"width":374,"height":228,"type":"text","text":"```C\nint id1 = fork();\nint id2 = fork\nif (id1 == 0)\n\tif (id2 == 0) <- process y\n\tif (id2 != 0) <- process x\nelse if (id1 != 0)\n\tif (id2 == 0) <- process z\n\tif (id2 != 0) <- parent\n```"},
+		{"id":"5896b1dcbec45f6d","type":"text","text":"## Two [[fork 1]]s","x":-1786,"y":-560,"width":166,"height":60}
+	],
+	"edges":[
+		{"id":"7ba60a6230ff699f","fromNode":"8c35467122fd3961","fromSide":"bottom","toNode":"5feba57069dffd4b","toSide":"top","color":"5"},
+		{"id":"9dcbe61a62db2bf3","fromNode":"8c35467122fd3961","fromSide":"right","toNode":"9f0aa8bcdbe23ba3","toSide":"top","color":"4"},
+		{"id":"027f02ba94b02f08","fromNode":"5feba57069dffd4b","fromSide":"bottom","toNode":"355ad6414ee8dc75","toSide":"top","color":"4"}
+	]
+}
