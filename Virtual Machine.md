@@ -401,8 +401,8 @@ vmwgfx error - change display settings to VboxVGA
 `free --mega = megabytes`
 `tmpfs` - Temporary File System - stored in RAM not on SSD or HDD. Fast but volatile. Do not include in total disk space
 #### References
-[[born2beroot 1]]
-[[Shell Commands 1]]
+[[born2beroot]]
+[[Shell Commands]]
 [PasqualeRossi Guide](https://github.com/pasqualerossi/Born2BeRoot-Guide)
 [GE Martin Guide](https://github.com/gemartin99/Born2beroot-Tutorial/blob/main/README_EN.md)
 [Mcombeau bonus](https://github.com/mcombeau/Born2beroot/blob/main/guide/bonus_debian.md)
