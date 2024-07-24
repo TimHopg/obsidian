@@ -1,6 +1,6 @@
 #todo #School42 #C_Language 
 
-This project uses [[MLX 1]] which is a wrapper for the X11 library. However complicated MLX seems X11 is even more of a headache.
+This project uses [[MLX]] which is a wrapper for the X11 library. However complicated MLX seems X11 is even more of a headache.
 
 For when I was developing at home on my mac, I used the Remote SSH extension for the first time. And SSH using terminal too to use my familiar dev environment
 

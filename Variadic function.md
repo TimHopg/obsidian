@@ -31,4 +31,3 @@ eg.
 * close with `va_end`
 
 #### References
-[[]]

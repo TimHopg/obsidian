@@ -23,4 +23,4 @@ int main(int argc, char **argv)
 `./a.out > output.txt` - to direct output to text file
 
 #### References
-[[Argc Argv 1]]
+[[Argc Argv]]
