@@ -15,6 +15,6 @@ all man pages with keyword
 `apropos ""` - all available man pages
 
 #### References
-[[Shell Commands 1]]
+[[Shell Commands]]
 
 _2024-05-13 22:55_

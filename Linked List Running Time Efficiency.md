@@ -4,5 +4,5 @@
 *Appending is O(n)* always have to loop through the entire list
 *Searching is O(n)* might have to search through the whole list
 #### References
-[[Linked Lists 1]]
-[[Big O notation 1]]
+[[Linked Lists]]
+[[Big O notation]]

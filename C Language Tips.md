@@ -77,6 +77,8 @@ This method only works when arrays are initiated and calculated in the same func
 #### printf()
 Has an internal buffer so prints once program has run.
 Use `fflush(stdout)` after the call to `printf()` for it to print immediately.
+#### Negative One-Liner
+`Value * ((Value > 0) - (Value < 0))`
 #### References
 [[Pre & Post Decrement Increment]]
 [[Bitwise Operators]]

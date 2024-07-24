@@ -59,4 +59,4 @@ TEST(ft_calloc_test, overflow_leak) {
 }
 ```
 #### References
-[[Malloc 1]]
+[[Malloc]]

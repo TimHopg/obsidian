@@ -15,5 +15,5 @@ The symbols are prefixed with the following letters:
 `ar t lib.a
 Archive utility. `t` returns the table of contents. In this case the `.o` files.
 #### References
-[[ar 1]]
-[[Shell Commands 1]]
+[[ar]]
+[[Shell Commands]]
