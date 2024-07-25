@@ -79,9 +79,13 @@ int main(void){
 ### execve()
 `int execve(const char *filename, char *const argv[], char *const envp[]);`
 
-`execve()` executes the program pointed to by `filename`. This is the path of the program 
+`execve()` executes the program pointed to by `filename`. This is the path of the program like `ping`. Could be `usr/bin/ping`.
+
+`argv` argument is `{"program_name", "flag/argument1", "flag/argument2", NULL}`
+The argv string must be NULL terminated.
 
 `execve()` does not return on success, the calling process is **replaced** by the executed `filename` but the PID remains the same.
+The whole process is replaced by the program so nothing can be run in this process afterwards.
 ### unlink()
 `int unlink(const char *pathname);`
 
