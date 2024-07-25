@@ -79,7 +79,7 @@ int main(void){
 ### execve()
 `int execve(const char *filename, char *const argv[], char *const envp[]);`
 
-`execve()` executes the program pointed to by `filename`.
+`execve()` executes the program pointed to by `filename`. This is the path of the program 
 
 `execve()` does not return on success, the calling process is **replaced** by the executed `filename` but the PID remains the same.
 ### unlink()
