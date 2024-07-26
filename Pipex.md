@@ -44,6 +44,7 @@ They can be separate by bitwise or operators.
 They now can be used interchangeably and share the same offset and file status flags. Any changes made to one will affect the other.
 
 So if you pass `STDOUT_FILENO`(standard out file number) as `newfd` you can reroute another file descriptor to the standard out.
+*`dup2()` doesn't just move a file descriptor, it creates another one so you must close the previous `fd` after calling it*
 ### pipe()
 `int pipe(int pipefd[2]);`
 
