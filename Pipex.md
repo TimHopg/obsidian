@@ -128,6 +128,11 @@ while (wait(NULL) != -1 && errno != ECHILD)
 ```
 
 `dup2(fd[1], STDOUT_FILENO)` - reroutes the standard out to file descriptor 1 which is the write end of the pipe. `fd[0]` = read, `fd[1]` = write.
+
+It's looking like we will need a fork for each process ie a fork for each `cmd`.
+	forks = number of `cmd`'s
+And a pipe to go from `infile` to `cmd1` and from `cmd` to `outfile` as well as a pipe between each command. (Is that the case with here_doc), we will see.
+	pipes = (`cmd`'s - 1) + 2
 #### References
 * [[fork]]
 * [[PID]]
