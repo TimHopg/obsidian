@@ -43,7 +43,7 @@ They can be separate by bitwise or operators.
 * If `oldfd` is valid and `newfd` has the same value, `dup2()` does nothing and returns `newfd`.
 They now can be used interchangeably and share the same offset and file status flags. Any changes made to one will affect the other.
 
-
+So if you pass `STDOUT_FILENO`(standard out file number) as `newfd` you can reroute another file descriptor to the standard out.
 ### pipe()
 `int pipe(int pipefd[2]);`
 
@@ -125,6 +125,8 @@ When using multiple forks, processes may have more than one child process. So `w
 while (wait(NULL) != -1 && errno != ECHILD)
 	(void)0;
 ```
+
+`dup2(fd[1], STDOUT_FILENO)` - reroutes the standard out to file descriptor 1 which is the write end of the pipe. `fd[0]` = read, `fd[1]` = write.
 #### References
 * [[fork]]
 * [[PID]]
