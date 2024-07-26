@@ -131,8 +131,8 @@ while (wait(NULL) != -1 && errno != ECHILD)
 
 It's looking like we will need a fork for each process ie a fork for each `cmd`.
 	forks = number of `cmd`'s
-And a pipe to go from `infile` to `cmd1` and from `cmd` to `outfile` as well as a pipe between each command. (Is that the case with here_doc), we will see.
-	pipes = (`cmd`'s - 1) + 2
+And a pipe to go between number of commands only. dup2 will take care of reading from infile and to outfile so no pipes are needed there. (Is that the case with here_doc), we will see.
+	pipes = `cmd`'s - 1
 
 You need get_next_line for here_doc.
 #### References
