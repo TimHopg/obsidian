@@ -42,6 +42,8 @@ They can be separate by bitwise or operators.
 * If `oldfd` is not a valid fd, the call fails and `newfd` is *NOT* closed
 * If `oldfd` is valid and `newfd` has the same value, `dup2()` does nothing and returns `newfd`.
 They now can be used interchangeably and share the same offset and file status flags. Any changes made to one will affect the other.
+
+
 ### pipe()
 `int pipe(int pipefd[2]);`
 
