@@ -133,6 +133,8 @@ It's looking like we will need a fork for each process ie a fork for each `cmd`.
 	forks = number of `cmd`'s
 And a pipe to go from `infile` to `cmd1` and from `cmd` to `outfile` as well as a pipe between each command. (Is that the case with here_doc), we will see.
 	pipes = (`cmd`'s - 1) + 2
+
+You need get_next_line for here_doc.
 #### References
 * [[fork]]
 * [[PID]]
