@@ -131,9 +131,9 @@ while (wait(NULL) != -1 && errno != ECHILD)
 * [[wait]]
 * [wait & waitpid](https://linux.die.net/man/2/wait)
 * [[pipe]]
-* [access()]([https://linux.die.net/man/2/access](https://linux.die.net/man/2/access))
+* [access()](https://linux.die.net/man/2/access)
 * [[dup2()]]
-* [dup2()]([https://linux.die.net/man/2/dup2](https://linux.die.net/man/2/dup2))
+* [dup2()](https://linux.die.net/man/2/dup2)
 * [unlink](https://linux.die.net/man/2/unlink)
 
 _2024-07-19 12:53_
