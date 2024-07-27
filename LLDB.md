@@ -7,6 +7,7 @@ Mac's version of GDB.
 `run` - runs program
 `target create progname` - sets target as executable
 `b main` - sets breakpoint at main
+*`breakpoint set --name main`* <- this works
 `s` - step into
 `n` - next
 `ni` - next instruction (assembly)
