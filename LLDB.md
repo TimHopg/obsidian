@@ -2,6 +2,8 @@
 Mac's version of GDB.
 `lldb` then `help`
 
+*the flag `-0` in the compiler messes with lldb*
+
 `lldb ./program.out` - enters LLDB
 `gui` - launches GUI
 `run` - runs program
