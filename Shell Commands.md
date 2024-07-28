@@ -66,7 +66,7 @@ aliases: Terminal Shortcuts
 
 `Ctrl + C` - user interrupt (cancel)
 `Ctrl + D` - end of file
-`Ctrl + R` - open command history
+`Ctrl + R` - open command history (search)
 `Ctrl + A` - go to start of command line
 `Ctrl + E` - go to end of command line
 `Ctrl + U` - delete from cursor to start of command line
