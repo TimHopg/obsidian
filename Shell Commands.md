@@ -53,7 +53,7 @@ aliases: Terminal Shortcuts
 * [[type]] - shows what would be executed if typed (aliases etc.)
 * [[ulimit]] - User limits
 * [[uname]] - Unix name - prints details about machine and O/S
-* [[uniq]] - unique elements only (must be [[sort]]ed)
+* [[uniq]] - unique elements only (must be [[sort]]ed first)
 * [[wall]] - write all. sends message to all users logged in
 * [[who]] - shows who is logged on
 * [[wc]] - word count
