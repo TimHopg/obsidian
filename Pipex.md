@@ -88,7 +88,9 @@ int main(void){
 The argv string must be NULL terminated.
 
 `execve()` does not return on success, the calling process is **replaced** by the executed `filename` but the PID remains the same.
-The whole process is replaced by the program so nothing can be run in this process afterwards.
+The whole process is replaced by the program so nothing can be run in this process afterwards. Anything afterwards will only be run if an error occurs with `execve()`.
+
+`envp` will be the environment variables that the new process will have access to. You can send a modified `envp` list to give it access to a specific library path for instance.
 ### unlink()
 `int unlink(const char *pathname);`
 
