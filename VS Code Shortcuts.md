@@ -20,7 +20,7 @@ aliases: vscode
 `Ctrl + [ / ]` - Increase / decrease indent
 `Ctrl + Opt [ / ]` - fold / unfold functions
 `Ctrl + Shift + \` - jump between brackets
-`Ctrl (alt) + -` - go back (previous file etc)
+`Ctrl (Cmd) + -` - go back (previous file etc)
 
 `Ctrl + L` - highlight line
 `Ctrl + D` - delete forwards
