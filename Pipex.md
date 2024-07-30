@@ -137,6 +137,8 @@ And a pipe to go between number of commands only. dup2 will take care of reading
 	pipes = `cmd`'s - 1
 
 You need get_next_line for here_doc.
+#### Sigpipe
+`yes | head -n 5` - after head has read its 5 lines it closes the input stream 
 #### References
 * [[fork]]
 * [[PID]]
