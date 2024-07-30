@@ -91,6 +91,8 @@ The argv string must be NULL terminated.
 The whole process is replaced by the program so nothing can be run in this process afterwards. Anything afterwards will only be run if an error occurs with `execve()`.
 
 `envp` will be the environment variables that the new process will have access to. You can send a modified `envp` list to give it access to a specific library path for instance.
+
+For error handling, you can use the same process without 
 ### unlink()
 `int unlink(const char *pathname);`
 
