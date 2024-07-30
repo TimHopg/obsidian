@@ -92,7 +92,7 @@ The whole process is replaced by the program so nothing can be run in this proce
 
 `envp` will be the environment variables that the new process will have access to. You can send a modified `envp` list to give it access to a specific library path for instance.
 
-For error handling, you can use the same process without 
+For error handling, you can use the same process without conditionals since any code after `execve()` will not run if `execve()` is successful.
 ### unlink()
 `int unlink(const char *pathname);`
 
