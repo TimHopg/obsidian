@@ -154,6 +154,10 @@ export PATH=$OLD_PATH
 ```
 #### SIGPIPE
 `yes | head -n 5` - The `yes` command continuously outputs "yes" until it is killed. After head has read its 5 lines it closes the input stream. The next time `yes` tries to write it instead receives a `SIGPIPE` signal which is how it knows when to terminate.
+#### Exit Statuses
+In a pipeline, the exit status will reflect the status of the last pipe in the line. So even if a file does not exist, if the last cmd is successful, the EXIT_STATUS will be `0`.
+You can determine the exit status of your command with the comman
+`echo $?`
 #### References
 * [[fork]]
 * [[PID]]
