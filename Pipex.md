@@ -149,6 +149,8 @@ Environment variables, the third argument sent to main, contains the system vari
 ```SHELL
 OLD_PATH=$PATH
 unset PATH
+# test pipex here
+export PATH=$OLD_PATH
 ```
 #### SIGPIPE
 `yes | head -n 5` - The `yes` command continuously outputs "yes" until it is killed. After head has read its 5 lines it closes the input stream. The next time `yes` tries to write it instead receives a `SIGPIPE` signal which is how it knows when to terminate.
