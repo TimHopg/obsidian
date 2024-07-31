@@ -25,6 +25,8 @@ aliases: vscode
 `Ctrl + L` - highlight line
 `Ctrl + D` - delete forwards
 
+`Double Click` - on filename to permanently open it (i.e. not in preview mode). Files in preview mode have their titles in *italics*.
+
 ### Customisation
 `COMMAND: Developer: Inspect Scope` - to edit specific font colours
 Make the changes in user JSON file
