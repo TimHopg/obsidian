@@ -145,6 +145,11 @@ When file does not exist, it is created but also truncated.
 The octal `0644` represents `rw- r-- r--` (user/group/other)
 #### envp
 Environment variables, the third argument sent to main, contains the system variables that can be used by the program. `PATH=` is one of these variables which contains the system's paths to binaries (where the cmds may be stored).
+
+```SHELL
+OLD_PATH=$PATH
+unset PATH
+```
 #### SIGPIPE
 `yes | head -n 5` - The `yes` command continuously outputs "yes" until it is killed. After head has read its 5 lines it closes the input stream. The next time `yes` tries to write it instead receives a `SIGPIPE` signal which is how it knows when to terminate.
 #### References
