@@ -139,6 +139,9 @@ And a pipe to go between number of commands only. dup2 will take care of reading
 	pipes = `cmd`'s - 1
 
 You need get_next_line for here_doc.
+#### > Redirect
+When file does not exist, it is created but also truncated. 
+``
 #### SIGPIPE
 `yes | head -n 5` - The `yes` command continuously outputs "yes" until it is killed. After head has read its 5 lines it closes the input stream. The next time `yes` tries to write it instead receives a `SIGPIPE` signal which is how it knows when to terminate.
 #### References
@@ -151,5 +154,6 @@ You need get_next_line for here_doc.
 * [[dup2()]]
 * [dup2()](https://linux.die.net/man/2/dup2)
 * [unlink](https://linux.die.net/man/2/unlink)
+* CodeVault processes playlist YouTube
 
 _2024-07-19 12:53_
