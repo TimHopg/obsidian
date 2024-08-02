@@ -44,6 +44,7 @@ aliases: Terminal Shortcuts
 * [[shutdown]] - `shutdown -h now` - `-h` stops hard disks
 * [[sort]] - sorts alphabetically (or other)
 * [[stat]] - statistics
+* [[Sys Calls Lib Calls|strace]] - returns system calls used by a program
 * [[su]] - switch user
 * [[sudo]] - super user do
 * [[tar]] - tarball (compressed files)
