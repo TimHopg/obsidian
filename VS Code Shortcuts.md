@@ -3,6 +3,8 @@ aliases: vscode
 ---
 #VS_Code #Programming 
 ### Shortcuts
+`Ctrl + K` then `Ctrl + S` - opens shortcuts
+
 `Ctrl + P` - opens go to file
 	`>` - opens command palette (or `Ctrl + Shift + P`)
 	`@` - go to symbol (or `Ctrl + Shift + .)
@@ -24,6 +26,9 @@ aliases: vscode
 
 `Ctrl + L` - highlight line
 `Ctrl + D` - delete forwards
+
+`Ctrl + Shift + M` - Show activity bar (@left or right)
+`Ctrl + Option + Cmd + M` - Hide activity bar
 
 `Double Click` - on filename to permanently open it (i.e. not in preview mode). Files in preview mode have their titles in *italics*.
 
