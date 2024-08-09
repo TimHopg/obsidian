@@ -88,15 +88,15 @@ You can register to any of the events with a hook registration function.
 `void mlx_hook(mlx_win_list_t *win_ptr, int x_event, int x_mask, int (*f)(), void *param)`
 Some versions of MLX can't implement mask so no mask will be used regardless of this value.
 
-| Hooking event | code | Prototype|
-| --- | --- | ---|
-|ON_KEYDOWN | 2 |`int (*f)(int keycode, void *param)`|
-|ON_KEYUP* | 3 | `int (*f)(int keycode, void *param)` | 
- | ON_MOUSEDOWN* | 4 | `int (*f)(int button, int x, int y, void *param)` | 
- | ON_MOUSEUP | 5 | `int (*f)(int button, int x, int y, void *param)` | 
- | ON_MOUSEMOVE | 6 | `int (*f)(int x, int y, void *param)` | 
- | ON_EXPOSE* | 12 | `int (*f)(void *param)` | 
- | ON_DESTROY | 17 | `int (*f)(void *param)` | 
+| Hooking event | code | Prototype                                         |     |
+| ------------- | ---- | ------------------------------------------------- | --- |
+| ON_KEYDOWN    | 2    | `int (*f)(int keycode, void *param)`              |     |
+| ON_KEYUP*     | 3    | `int (*f)(int keycode, void *param)`              |     |
+| ON_MOUSEDOWN* | 4    | `int (*f)(int button, int x, int y, void *param)` |     |
+| ON_MOUSEUP    | 5    | `int (*f)(int button, int x, int y, void *param)` |     |
+| ON_MOUSEMOVE  | 6    | `int (*f)(int x, int y, void *param)`             |     |
+| ON_EXPOSE*    | 12   | `int (*f)(void *param)`                           |     |
+| ON_DESTROY    | 17   | `int (*f)(void *param)`                           |     |
 _*Has mlx_hook alias._
 #### Hooking Aliases
 -   `mlx_expose_hook` function is an alias of `mlx_hook` on expose event (`12`).
