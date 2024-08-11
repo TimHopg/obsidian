@@ -18,6 +18,7 @@
 	* [42 Header](https://github.com/42Paris/42header)
 * [Installette](https://github.com/Kuninoto/installette) - a collection of 42 tools
 * [42 CLI](https://github.com/herbievine/42-cli)
+* [Ubuntu Prettify Notepad](https://askubuntu.com/questions/827050/auto-indent-and-pretty-code-by-notepadqq)
 #### Tests
 * [[printf() tests]]
 * [[Testing strmapi()]]
