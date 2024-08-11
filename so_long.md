@@ -30,6 +30,9 @@ Used [[rand()]] with `srand(time(0))` to get enemy to move randomly. `rand()` al
 #### Extras
 Remember to `make re` when changing certain aspects of the program. Especially in header files.
 Move function could be refactored to handle enemy and player.
+
+Install tools for use on mac(?), possibly on linux too:
+`sudo apt-get install libx11-dev xserver-xorg-dev xorg-dev`
 #### References
 [Harm Smits 42 Docs](https://harm-smits.github.io/42docs/libs/minilibx/introduction.html)
 [42 Cursus Gitbook](https://42-cursus.gitbook.io/guide/rank-02/so_long/understand-so_long)
