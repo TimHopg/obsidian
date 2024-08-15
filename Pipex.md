@@ -143,6 +143,9 @@ You need get_next_line for here_doc.
 When file does not exist, it is created but also truncated. 
 `open(file_name, O_RDWR | O_CREAT | O_TRUNC, 0644);`
 The octal `0644` represents `rw- r-- r--` (user/group/other)
+#### >> Redirect Append
+`open(file_name, O_RDWR | O_CREAT | O_APPEND, 0644);`
+Appends to file instead of deleting and starting again.
 #### envp
 Environment variables, the third argument sent to main, contains the system variables that can be used by the program. `PATH=` is one of these variables which contains the system's paths to binaries (where the cmds may be stored).
 
