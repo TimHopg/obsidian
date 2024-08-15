@@ -82,7 +82,8 @@ Use `fflush(stdout)` after the call to `printf()` for it to print immediately.
 #### Functions
 `dprintf()` - like `printf()` but the first argument is the file descriptor, or `fprintf()`
 #### File Descriptors
-Set all file descriptors to `-1` when not in use, then you can safely close them with a fu
+Set all file descriptors to `-1` when not in use, then you can safely close them with a function that checks if they are equal to `-1`. And set all pointers to `NULL` (`ft_bzero()` or `ft_calloc()`).
+
 #### References
 [[Pre & Post Decrement Increment]]
 [[Bitwise Operators]]
