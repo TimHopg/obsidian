@@ -161,6 +161,10 @@ export PATH=$OLD_PATH
 In a pipeline, the exit status will reflect the status of the last pipe in the line. So even if a file does not exist, if the last cmd is successful, the EXIT_STATUS will be `0`.
 You can determine the exit status of your command with the comman
 `echo $?`
+#### PATH
+When the environment is not set `env -i` the default of `usr/bin:/bin` is used as the directory to look for programs. This is to ensure system programs can still be found when the path is not set.
+#### here_doc
+Here document is a way to create input on the command line before being piped to another command. Here_doc is the only command that is run sequentially, that is to say it must finish collecting data before the rest of the commands are run. The rest of the commands are run in parallel.
 
 #### References
 * [[fork]]
