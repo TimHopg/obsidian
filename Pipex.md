@@ -158,6 +158,8 @@ export PATH=$OLD_PATH
 In a pipeline, the exit status will reflect the status of the last pipe in the line. So even if a file does not exist, if the last cmd is successful, the EXIT_STATUS will be `0`.
 You can determine the exit status of your command with the comman
 `echo $?`
+
+
 #### References
 * [[fork]]
 * [[PID]]
