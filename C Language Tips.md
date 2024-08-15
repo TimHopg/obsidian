@@ -80,7 +80,9 @@ Use `fflush(stdout)` after the call to `printf()` for it to print immediately.
 #### Negative One-Liner
 `Value * ((Value > 0) - (Value < 0))`
 #### Functions
-`dprintf()` - like `printf()` but the first argument is the file descriptor
+`dprintf()` - like `printf()` but the first argument is the file descriptor, or `fprintf()`
+#### File Descriptors
+Set all file descriptors to `-1` when not in use, then you can safely close them with a fu
 #### References
 [[Pre & Post Decrement Increment]]
 [[Bitwise Operators]]

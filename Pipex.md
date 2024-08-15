@@ -159,7 +159,6 @@ In a pipeline, the exit status will reflect the status of the last pipe in the l
 You can determine the exit status of your command with the comman
 `echo $?`
 
-
 #### References
 * [[fork]]
 * [[PID]]
