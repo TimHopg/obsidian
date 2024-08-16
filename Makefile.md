@@ -41,9 +41,10 @@ If your first rule is `all:` that will run if you type just `make`
 - `diff: git diff --stat` - to show git diffs before commiting
 - tarballs
 - other git tasks
-
+- tests
+	- 
+- cleanup all in prep for submit
 #### Developing on both platforms
-
 `ifeq uname` is Linux set some variables to something. Else set them to something else.
 
 ``` makefile
@@ -55,6 +56,7 @@ else # OSX
 	MLX_FLAGS = -Lmlx -lmlx -L/usr/X11/lib -lXext -lX11 -framework OpenGL -framework AppKit
 endif
 ```
-
+#### Common Problems
+Makefiles are whitespace sensitive. A trailing space is often the cause of some makefile problems.
 #### References
 [[Code Structure]]
