@@ -37,6 +37,9 @@ If your first rule is `all:` that will run if you type just `make`
 
 `-` - dash before a command says run and continue running even if error occurs
 `make --verbose` - prints all commands even if quieted
+
+`make -d` - debug
+`make --debug=b` - less verbose debug
 #### Add Rules For Other tasks
 - `diff: git diff --stat` - to show git diffs before commiting
 - tarballs
@@ -62,4 +65,3 @@ endif
 Makefiles are whitespace sensitive. A trailing space is often the cause of some makefile problems.
 #### References
 [[Code Structure]]
-
