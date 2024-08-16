@@ -42,7 +42,9 @@ If your first rule is `all:` that will run if you type just `make`
 - tarballs
 - other git tasks
 - tests
-	- 
+	- ```C
+	  map%:
+		  ./so_long maps/$*.ber
 - cleanup all in prep for submit
 #### Developing on both platforms
 `ifeq uname` is Linux set some variables to something. Else set them to something else.
@@ -60,3 +62,4 @@ endif
 Makefiles are whitespace sensitive. A trailing space is often the cause of some makefile problems.
 #### References
 [[Code Structure]]
+
