@@ -18,4 +18,10 @@ Restructuring code without changing its functionality
 C requires type defined variables
 
 _CLI_ Command Line Interface
-_GUI_ Graphical User Interface
+_GUI_ Graphical User Interface#todo 
+
+
+#### References
+[[Unit Tests]]
+
+_2024-08-17 17:10_
