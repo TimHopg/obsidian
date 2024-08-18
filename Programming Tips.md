@@ -1,5 +1,4 @@
-#Programming #C_Language 
-
+#Programming #C_Language #todo 
 #### Short-Circuit Evaluation
 If the first statement is false, the second operand will not be evaluated.
 
@@ -18,9 +17,7 @@ Restructuring code without changing its functionality
 C requires type defined variables
 
 _CLI_ Command Line Interface
-_GUI_ Graphical User Interface#todo 
-
-
+_GUI_ Graphical User Interface
 #### References
 [[Unit Tests]]
 
