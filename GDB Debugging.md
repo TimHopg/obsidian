@@ -17,6 +17,6 @@ Compile with `-g` flag
 
 #### References
 [[LLDB]] is mac equivalent
-[[Debugging in VS Code]]
+[[Debugging]]
 
 _2024-05-24 19:45_
