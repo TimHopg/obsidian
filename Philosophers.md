@@ -14,9 +14,9 @@ There is no communication between philosophers (so they don't know when another 
 This problem was dreamt up by Dijkstra to illustrate the problems that can arise in a computer system where two processes try to access the same block of memory at the same time.
 
 You can introduce a kind of monitor into the system that allows each philosopher to ask permission to take the forks and thus eat but if they are unable to get both forks, they will replace any forks they have so other philosophers can try. This is known as a lock. You can combine a lock with some kind of hierarchy of who is hungriest.
-#### Atomic operations
+### Atomic operations
 When one philosopher asks for the lock, another philosopher cannot ask at the same time – to avoid a lock being granted to two philosophers simultaneously.
-#### Compilation
+### Compilation
 link with `cc -pthread main.c` pthread flag
 #### Creating a Thread
 `#include <pthread.h>
@@ -47,7 +47,14 @@ We can, however, tell the OS to reclaim resources from a thread as soon as it fi
 ```c
 int pthread_detach(pthread_t thread);
 ```
+### Data Races
+A data race occurs when two threads try to access the same block of memory at the same time.
 
+`gcc -fsanitize=thread -g threads.c && ./a.out`
+
+Fsanitize thread shows this.
+### Mutex
+Short for Mutual Exclusion is a lock that allows us to regulate data access and prevent data races. 
 #### References
 [CodeQuoi](https://www.codequoi.com/en/)
 
