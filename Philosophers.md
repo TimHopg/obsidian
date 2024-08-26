@@ -69,8 +69,12 @@ We can leave the second argument as `NULL`.
 int pthread_mutex_lock(pthread_mutex_t *mutex));
 int pthread_mutex_unlock(pthread_mutex_t *mutex);
 ```
+If the mutex is unlocked, `lock` locks it and the calling thread becomes its owner, the function ends immediately. If the mutex is already locked by another thread, `lock` suspends the execution of the calling thread until the mutex is unlocked.
 
+`unlock` unlocks the mutex but doesn't check if the thread calling it is its owner. If it's not, we may get lock order violation errors.
 #### References
 [CodeQuoi](https://www.codequoi.com/en/)
+[Oceano Medium: Philo](https://medium.com/@jalal92/the-dining-philosophers-7157cc05315)
+[Oceano Medium: Deadlocks](https://medium.com/@jalal92/deadlocks-b059eed3e6c3)[Oceano Medium: Threads]
 
 _2024-08-17 17:49_
