@@ -112,6 +112,7 @@ Use:
 [Oceano Medium: Philo](https://medium.com/@jalal92/the-dining-philosophers-7157cc05315)
 [Oceano Medium: Deadlocks](https://medium.com/@jalal92/deadlocks-b059eed3e6c3)
 [Oceano Medium: Threads](https://medium.com/@jalal92/lets-discuss-threads-grab-a-coffee-ad4d4ebf7181)
+[Ocean: Notion](https://suspectedoceano.notion.site/Philosophers-b1bf3c57eee6420cafa7d0900b3d3216)
 [Youtube: Jamshidbek](https://www.youtube.com/watch?v=UGQsvVKwe90)
 [Medium: MannBell](https://m4nnb3ll.medium.com/the-dining-philoshophers-an-introduction-to-multitasking-a-42-the-network-project-34e4141dbc49)
 [Medium: Dean Ruina](https://medium.com/@ruinadd/philosophers-42-guide-the-dining-philosophers-problem-893a24bc0fe2)
