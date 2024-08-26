@@ -75,6 +75,13 @@ If the mutex is unlocked, `lock` locks it and the calling thread becomes its own
 #### References
 [CodeQuoi](https://www.codequoi.com/en/)
 [Oceano Medium: Philo](https://medium.com/@jalal92/the-dining-philosophers-7157cc05315)
-[Oceano Medium: Deadlocks](https://medium.com/@jalal92/deadlocks-b059eed3e6c3)[Oceano Medium: Threads]
+[Oceano Medium: Deadlocks](https://medium.com/@jalal92/deadlocks-b059eed3e6c3)
+[Oceano Medium: Threads](https://medium.com/@jalal92/lets-discuss-threads-grab-a-coffee-ad4d4ebf7181)
+[Youtube: Jamshidbek](https://www.youtube.com/watch?v=UGQsvVKwe90)
+[Medium: MannBell](https://m4nnb3ll.medium.com/the-dining-philoshophers-an-introduction-to-multitasking-a-42-the-network-project-34e4141dbc49)
+[Medium: Dean Ruina](https://medium.com/@ruinadd/philosophers-42-guide-the-dining-philosophers-problem-893a24bc0fe2)
+[Youtube: CodeVault Threads Playlist](https://www.youtube.com/watch?v=d9s_d28yJq0&list=PLfqABt5AS4FmuQf70psXrsMLEDQXNkLq2&pp=iAQB)
+
+
 
 _2024-08-17 17:49_
