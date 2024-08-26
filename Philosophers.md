@@ -76,6 +76,14 @@ If the mutex is unlocked, `lock` locks it and the calling thread becomes its own
 `pthread_mutex_destroy(mutex);`
 
 Destroys an unlocked mutex and frees any resources it's holding but only if it's unlocked. Attempting to destroy a locked mutex results in undefined behaviour.
+### Deadlocks
+When mutexes cause each thread to wait for one another, this is called a deadlock and the program must be killed.
+### Testing Programs with Threads
+Test multiple times when using threads because some lucky synchronisation can occur.
+
+Use:
+* `fsanitize=thread -g`
+* `valgrind --too`
 #### References
 [CodeQuoi](https://www.codequoi.com/en/)
 [Oceano Medium: Philo](https://medium.com/@jalal92/the-dining-philosophers-7157cc05315)
