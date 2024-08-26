@@ -27,6 +27,9 @@ Threads share:
 But have their own:
 * *registers*
 * *stack*
+
+Multithreaded programs can continue running even if part of the program is blocked or performing a lengthy operation.
+It also benefits from resource sharing to keep programs small.
 ### Race Conditions
 Occur when two threads' operations interfere with each other.  
 `var++;` includes a read, increment and write to memory call. if another thread tries to write before another thread has completed the whole operation, the output might be unexpected.  
@@ -111,7 +114,5 @@ Use:
 [Medium: MannBell](https://m4nnb3ll.medium.com/the-dining-philoshophers-an-introduction-to-multitasking-a-42-the-network-project-34e4141dbc49)
 [Medium: Dean Ruina](https://medium.com/@ruinadd/philosophers-42-guide-the-dining-philosophers-problem-893a24bc0fe2)
 [Youtube: CodeVault Threads Playlist](https://www.youtube.com/watch?v=d9s_d28yJq0&list=PLfqABt5AS4FmuQf70psXrsMLEDQXNkLq2&pp=iAQB)
-
-
 
 _2024-08-17 17:49_
