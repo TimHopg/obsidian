@@ -17,7 +17,16 @@ You can introduce a kind of monitor into the system that allows each philosopher
 ### Atomic operations
 When one philosopher asks for the lock, another philosopher cannot ask at the same time – to avoid a lock being granted to two philosophers simultaneously.
 ### Threads
-Threads are basic units of CPU utilisation.
+Threads are basic units of CPU utilisation. We can have multithreaded processes to make use of more of the CPU's capacity.
+
+Threads share:
+* *code*
+* *data*
+* *files*
+
+But have their own:
+* *registers*
+* *stack*
 ### Race Conditions
 Occur when two threads' operations interfere with each other.  
 `var++;` includes a read, increment and write to memory call. if another thread tries to write before another thread has completed the whole operation, the output might be unexpected.  
