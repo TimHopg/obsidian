@@ -55,6 +55,21 @@ A data race occurs when two threads try to access the same block of memory at th
 Fsanitize thread shows this.
 ### Mutex
 Short for Mutual Exclusion is a lock that allows us to regulate data access and prevent data races. 
+#### Declaring Mutexes
+`pthread_mutex_t mutex;`
+
+```c
+int pthread_mutex_init(pthread_mutex_t *mutex,
+					   const pthread_mutexattr_t *mutexattr);
+```
+
+We can leave the second argument as `NULL`.
+#### Locking/Unlocking a Mutex
+```c
+int pthread_mutex_lock(pthread_mutex_t *mutex));
+int pthread_mutex_unlock(pthread_mutex_t *mutex);
+```
+
 #### References
 [CodeQuoi](https://www.codequoi.com/en/)
 
