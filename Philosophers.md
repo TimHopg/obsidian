@@ -50,10 +50,12 @@ int pthread_create(pthread_t *restrict thread,
 `start_routine` - a pointer to a function that takes a `void *arg` and returns `void *`. This is the function where the thread will start its execution.
 `arg` - a pointer to an argument to pass `start_routine` arguments. To pass several arguments, this pointer should be a data_structure.
 #### Joining/Detaching Threads
-`pthread_join` - blocks the execution of a thread until another thread finishes.
+`pthread_join` - blocks the execution of a thread until another thread finishes. It is called join because the thread is rejoining the main thread.
+
 ```c
 int pthread_join(pthread_t thread, void **retval);
 ```
+
 `thread` is the ID of the thread that this thread should wait for.
 `retval` contains the return value but `NULL` is enough here.
 This returns `0` for success or an error code for a failure.
