@@ -37,7 +37,7 @@ Occur when two threads' operations interfere with each other.
 ### Compilation
 link with `cc -pthread main.c` pthread flag
 #### Creating a Thread
-`#include <pthread.h>
+`#include <pthread.h>` – POSIX thread library
 
 ```c
 int pthread_create(pthread_t *restrict thread, 
