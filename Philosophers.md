@@ -16,6 +16,10 @@ This problem was dreamt up by Dijkstra to illustrate the problems that can arise
 You can introduce a kind of monitor into the system that allows each philosopher to ask permission to take the forks and thus eat but if they are unable to get both forks, they will replace any forks they have so other philosophers can try. This is known as a lock. You can combine a lock with some kind of hierarchy of who is hungriest.
 ### Atomic operations
 When one philosopher asks for the lock, another philosopher cannot ask at the same time – to avoid a lock being granted to two philosophers simultaneously.
+### Race Conditions
+Occur when two threads' operations interfere with each other.  
+`var++;` includes a read, increment and write to memory call. if another thread tries to write before another thread has completed the whole operation, the output might be unexpected.  
+gcc -S main.c - compiles in assembly to see what the processes are doing
 ### Compilation
 link with `cc -pthread main.c` pthread flag
 #### Creating a Thread
@@ -82,8 +86,11 @@ When mutexes cause each thread to wait for one another, this is called a deadloc
 Test multiple times when using threads because some lucky synchronisation can occur.
 
 Use:
-* `fsanitize=thread -g`
-* `valgrind --too`
+* `-fsanitize=thread -g`
+* `valgrind --tool=helgrind ./prog_name <args>`
+* `valgrind --tool=drd ./prog_name <args>`
+* `-fsanitize=address` & `valgrind`
+* compiling with `-S` stops the compiler after assembly code has been created but before creating an object
 #### References
 [CodeQuoi](https://www.codequoi.com/en/)
 [Oceano Medium: Philo](https://medium.com/@jalal92/the-dining-philosophers-7157cc05315)
