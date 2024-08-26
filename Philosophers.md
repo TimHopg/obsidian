@@ -72,6 +72,10 @@ int pthread_mutex_unlock(pthread_mutex_t *mutex);
 If the mutex is unlocked, `lock` locks it and the calling thread becomes its owner, the function ends immediately. If the mutex is already locked by another thread, `lock` suspends the execution of the calling thread until the mutex is unlocked.
 
 `unlock` unlocks the mutex but doesn't check if the thread calling it is its owner. If it's not, we may get lock order violation errors.
+#### Destroying a Mutex
+`pthread_mutex_destroy(mutex);`
+
+Destroys an unlocked mutex and frees any resources it's holding but only if it's unlocked. Attempting to destroy a locked mutex results in undefined behaviour.
 #### References
 [CodeQuoi](https://www.codequoi.com/en/)
 [Oceano Medium: Philo](https://medium.com/@jalal92/the-dining-philosophers-7157cc05315)
