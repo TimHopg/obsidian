@@ -74,7 +74,7 @@ A data race occurs when two threads try to access the same block of memory at th
 
 Fsanitize thread shows this.
 ### Mutex
-Short for Mutual Exclusion is a lock that allows us to regulate data access and prevent data races. 
+Short for Mutual Exclusion is a lock that allows us to regulate data access and prevent data races. Mutexes are used to protect a shared resource
 #### Declaring Mutexes
 `pthread_mutex_t mutex;`
 
