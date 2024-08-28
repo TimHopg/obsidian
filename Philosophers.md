@@ -163,7 +163,6 @@ int	main(int ac, char **av)
 		printf("%ld\n", get_current_time() - start_time);
 		ft_usleep(200);
 	}
-
 	return (0);
 }
 ```
