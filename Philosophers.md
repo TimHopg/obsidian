@@ -101,7 +101,37 @@ When mutexes cause each thread to wait for one another, this is called a deadloc
 ### Testing Programs with Threads
 Test multiple times when using threads because some lucky synchronisation can occur.
 
-Use:
+# Philo
+```C#
+#include <time.h>
+#include <sys/time.h>
+
+long get_time(void)
+{
+	struct timeval tp;
+	long milliseconds;
+	
+	gettimeofday(&tp, NULL);
+	milliseconds = tp.tv_sec * 1000;
+	milliseconds += tp.tv_usec / 1000;
+	return (milliseconds);
+}
+
+int main(int ac, char **av)
+{
+	long start_time;
+	start_time = get_time();
+	while(1)
+	{
+		printf("%ld\n", get_time() - start_time);
+		usleep(200 * 1000);
+	}
+	return (0);
+}
+```
+
+This is inaccurate. We need to tighten up the returns from `usleep()`.
+## Use:
 * `-fsanitize=thread -g`
 * `valgrind --tool=helgrind ./prog_name <args>`
 * `valgrind --tool=drd ./prog_name <args>`
