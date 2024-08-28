@@ -158,11 +158,9 @@ int	main(int ac, char **av)
 	long start_time;
 
 	start_time = get_current_time();
-
 	while(1)
 	{
 		printf("%ld\n", get_current_time() - start_time);
-
 		ft_usleep(200);
 	}
 
@@ -174,6 +172,10 @@ int	main(int ac, char **av)
 Contains two members:
 `time.tv_sec` - seconds since the Epoch (Jan 1 1970)
 `time.tv_usec` - additional microseconds
+
+`tv_sec * 1000` converts seconds to milliseconds
+`tv_usec / 1000` converts microseconds to milliseconds
+
 ## Use:
 * `-fsanitize=thread -g`
 * `valgrind --tool=helgrind ./prog_name <args>`
