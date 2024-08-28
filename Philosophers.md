@@ -130,7 +130,50 @@ int main(int ac, char **av)
 }
 ```
 
-This is inaccurate. We need to tighten up the returns from `usleep()`.
+This is inaccurate. We need to tighten up the returns from `usleep()`:
+
+```C
+size_t	get_current_time(void)
+{
+	struct timeval	time;
+
+	if (gettimeofday(&time, NULL) == -1)
+		write(2, "Time of day Error\n", 18);
+	return (time.tv_sec * 1000 + time.tv_usec / 1000);
+}
+
+int	ft_usleep(size_t milliseconds)
+{
+	size_t	start;
+
+	start = get_current_time();
+	while ((get_current_time() - start) < milliseconds)
+		usleep(500);
+	return (0);
+}
+
+
+int	main(int ac, char **av)
+{
+	long start_time;
+
+	start_time = get_current_time();
+
+	while(1)
+	{
+		printf("%ld\n", get_current_time() - start_time);
+
+		ft_usleep(200);
+	}
+
+	return (0);
+}
+```
+
+#### struct timeval
+Contains two members:
+`time.tv_sec` - seconds since the Epoch (Jan 1 1970)
+`time.tv_usec` - additional microseconds
 ## Use:
 * `-fsanitize=thread -g`
 * `valgrind --tool=helgrind ./prog_name <args>`
