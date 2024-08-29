@@ -191,5 +191,8 @@ Contains two members:
 [Medium: MannBell](https://m4nnb3ll.medium.com/the-dining-philoshophers-an-introduction-to-multitasking-a-42-the-network-project-34e4141dbc49)
 [Medium: Dean Ruina](https://medium.com/@ruinadd/philosophers-42-guide-the-dining-philosophers-problem-893a24bc0fe2)
 [Youtube: CodeVault Threads Playlist](https://www.youtube.com/watch?v=d9s_d28yJq0&list=PLfqABt5AS4FmuQf70psXrsMLEDQXNkLq2&pp=iAQB)
+[Testing: Socrates](https://github.com/nesvoboda/socrates)
+[Notion: Rooster](https://private-rooster-996.notion.site/philosophers-VM-c60be9c836084edfbcd9c07e29b429c4)
+
 
 _2024-08-17 17:49_
