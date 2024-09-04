@@ -5,7 +5,7 @@ aliases: Terminal Shortcuts
 
 * [[awk]] - text manipulation
 * [[alias]]
-* [[Manual search 1|apropros]] \<keyword\> - man pages and descriptions with keyword
+* [[Manual search 1|apropos]] \<keyword\> - man pages and descriptions with keyword
 * [[ar]] - Archive
 * [[bash]] - run
 * [[bat]] - like [[Cat]] (concatenate) but on steroids
