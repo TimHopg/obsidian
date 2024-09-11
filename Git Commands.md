@@ -1,4 +1,18 @@
 #todo #Git #Shell 
+### To Add Repo from Command Line
+`curl -u "TimHopg" https://api.github.com/user/repos -d '{"name":"EDIT_NAME","private":true}'`
+
+generate token from settings > dev tools at github. use this instead of password. set expiry date
+
+`git init
+`git add
+`git commit
+`git remote add origin https://github.com/username/repository-name.git` or `git@github.com:TimHopg/get_next_line_two.git`
+`git remote set-url origin https://github.com/TimHopg/GNL_V9.git` to change
+`git push -u origin master
+`git add -u` add all modified files
+`git ls-files -o -i --exclude-standard`
+`git config file`
 #### Git SSH
 `ssh-keygen -t rsa -b 4096`
 Generates pairs of SSH (secure shell) keys
@@ -13,6 +27,12 @@ Add public key to github
 `SPACE` - goes to next page
 `Q` - quit
 `git config -h` - An abridged version
+#### Branches
+`git branch` - verifies current branch
+`git branch NAME` - creates new branch
+`git checkout NAME` - switches to `NAME` branch
+`git checkout -b NAME` - creates and switches to `NAME` branch in one command
+`git push -u origin NAME` - 
 #### Git Commands
 `git rm --cached <file_name>` - Removes from git repo but leaves on disk (previously committed)
 `git init` - initialise new repo
@@ -32,20 +52,6 @@ Add public key to github
 `git clean -nd` - git clean dry run
 
 `git reet --hard HEAD` - restores working directory to last commit
-### To Add Repo from Command Line
-`curl -u "TimHopg" https://api.github.com/user/repos -d '{"name":"EDIT_NAME","private":true}'`
-
-generate token from settings > dev tools at github. use this instead of password. set expiry date
-
-`git init
-`git add
-`git commit
-`git remote add origin https://github.com/username/repository-name.git` or `git@github.com:TimHopg/get_next_line_two.git`
-`git remote set-url origin https://github.com/TimHopg/GNL_V9.git` to change
-`git push -u origin master
-`git add -u` add all modified files
-`git ls-files -o -i --exclude-standard`
-`git config file`
 #### Git Logs
 `git log (--oneline --reverse)` - Git history/log
 `git show d60(identifier)` - shows contents of commit
