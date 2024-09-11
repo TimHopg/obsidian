@@ -32,7 +32,7 @@ Add public key to github
 `git branch NAME` - creates new branch
 `git checkout NAME` - switches to `NAME` branch
 `git checkout -b NAME` - creates and switches to `NAME` branch in one command
-`git push -u origin NAME` - 
+`git push -u origin NAME` - pushes the new branch to the remote repo
 #### Git Commands
 `git rm --cached <file_name>` - Removes from git repo but leaves on disk (previously committed)
 `git init` - initialise new repo
