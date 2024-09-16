@@ -6,7 +6,8 @@
 Command palette > Edit Config JSON
 
 Right click on breakpoints to the left to change the type of breakpoint (add expression, create hit count, etc.)
-
+#### Assembly Code
+`cc -s`  - compiles into assembly code
 #### References
 [[GDB Debugging]]
 
