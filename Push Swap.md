@@ -65,7 +65,7 @@ While _A_ has more than 5 elements, pop the top element from _A_ if it is lower 
 When _A_ has five elements remaining, sort those five into ascending order:
 - Hard code an algorithm to sort a list of three.
 - To sort a list of four, rotate to get the smallest on top (check it's not already sorted) then pop to b and utilise three_sort.
-- To sort a list of four, do the same thing. Rotate until the smallest is on the top (check it's not already sorted), pop to b and then utilise four_sort.
+- To sort a list of five, do the same thing. Rotate until the smallest is on the top (check it's not already sorted), pop to b and then utilise four_sort.
 
 Now find the _best friend_ of each number in _b_.
 Subtract each number in _A_ from the first number in _B_. Look for the lowest positive number.
