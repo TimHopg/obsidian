@@ -13,8 +13,9 @@ aliases: vscode
 
 `Ctrl + Opt + Cmd + N` - create new file
 
-`Shift + Alt/Ctrl + Up/Down` - Add cursor line above/below 
+`Ctrl + Option + Up/Down` - Add cursor line above/below 
 `Ctrl + D` - Select next occurrence of selected text
+	`Ctrl + U` - undo last select
 `Ctrl + B` - Show/hide sidebar
 `Ctrl + \` - Split screen vertically
 `Ctrl + Cmd + Right/Left` - Move file to right/left group
