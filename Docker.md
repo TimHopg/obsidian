@@ -56,6 +56,7 @@ Add files to `.dockerignore` like git
 `docker push` - to a remote registry
 `docker pull ...`
 
+### Testing
 `docker pull [debian]`
 `docker images` - check which images are installed
 `docker create debian` why random name
