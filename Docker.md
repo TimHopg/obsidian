@@ -58,6 +58,7 @@ Add files to `.dockerignore` like git
 
 `docker pull [debian]`
 `docker images` - check which images are installed
+`docker create debian`
 #### References
 
 [[Virtual Machine]]
