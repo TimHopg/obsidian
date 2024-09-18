@@ -55,6 +55,9 @@ Add files to `.dockerignore` like git
 `docker stop` or `docker kill`
 `docker push` - to a remote registry
 `docker pull ...`
+
+`docker pull [debian]`
+`docker images` - check which images are installed
 #### References
 
 [[Virtual Machine]]
