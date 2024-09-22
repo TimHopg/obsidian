@@ -1,6 +1,13 @@
 #todo #School42 #Programming #C_Language 
 
-## Double Quotes
+## Parsing
+
+thinking...
+What if we 
+
+We need something like `strtok()`.
+ [recursive descent parser](http://en.wikipedia.org/wiki/Recursive_descent_parser)
+### Double Quotes
 
 Allow for variable expansion and command substitution but prevent word splitting and interpretation of special characters (except `$`, and `\`). We only need to worry about `$` (an env variable) in minishell.  
   
@@ -16,7 +23,8 @@ E.g. `echo abc"def"` outputs `abcdef`, any spaces inside the quotes would also b
   
 `set -- abc "def ghi"; echo $#` outputs `2`  
   
-## Single Quotes  
+### Single Quotes  
+
 Single quotes prevent all special character interpretation.  
     
 ## Functions
