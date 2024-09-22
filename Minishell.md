@@ -18,10 +18,10 @@ E.g. `echo abc"def"` outputs `abcdef`, any spaces inside the quotes would also b
   
 ## Single Quotes  
 Single quotes prevent all special character interpretation.  
-  
-  
-  
-  
+    
+## Functions
+
+
 `readline(char *prompt)`  
   
 Requires `-lreadline` flag to compile.  
