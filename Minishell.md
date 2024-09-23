@@ -1,5 +1,7 @@
 #todo #School42 #Programming #C_Language 
 
+## Ideas/Style guide
+- Set all unused `fd`s to `-1` when not in use or being used.
 ## Parsing
 
 thinking...
