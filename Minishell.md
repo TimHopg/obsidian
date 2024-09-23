@@ -48,7 +48,15 @@ https://stackoverflow.com/questions/10112038/parsing-commands-shell-like-in-c
 
 ### Hierarchy
 
-Shells have a natural hierarchy, pipelines redirections etc. Each node can
+Shells have a natural hierarchy, pipelines redirections etc. Each node can represent a command and each child nodes can represent components, arguments, files for redirection, subcommands.
+
+Recursive descent parser has a function for each type of grammar rule, commands, operators, arguments etc. This makes it easier to extend the shell with more complex features.
+
+### High-level Design
+
+- Split the string into tokens (commands, operators (`|`, `&&`, `>` etc.))
+- Define grammar rules for shell syntax
+- Write parsing functions that correspond to each gra
 ### Double Quotes
 
 Allow for variable expansion and command substitution but prevent word splitting and interpretation of special characters (except `$`, and `\`). We only need to worry about `$` (an env variable) in minishell.  
