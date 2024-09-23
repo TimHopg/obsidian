@@ -35,6 +35,7 @@ Single quotes prevent all special character interpretation.
     
 ## Functions
 
+### `readline()`
 
 `readline(char *prompt)`  
   
@@ -42,6 +43,16 @@ Requires `-lreadline` flag to compile.
 `prompt` displays as a prompt.  
 Returns the line entered on the terminal. This is mallocated and must be freed by the user.  
 If `EOF` is encountered while reading the line and the line is empty `NULL` is returned.
+
+https://web.mit.edu/gnu/doc/html/rlman_2.html
+https://tiswww.case.edu/php/chet/readline/readline.html#index-rl_005fon_005fnew_005fline
+
+#### `rl_clear_history()`
+
+Clears `readline`'s private history list.
+
+#### 
+
 #### References
 [FrankenShell Doc](https://github.com/AshParker19/42_minishell/blob/main/docs/documentation.md)
 https://github.com/AshParker19/42_minishell/blob/main/docs/documentation.md
