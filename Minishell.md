@@ -96,7 +96,7 @@ Your parser could produce an AST that looks like:
 	 <obj> ::= <art> <noun> | two furry dice   ; "two furry dice is a globbet that isn't parsed"
 ```
 
-
+We will use the top-down approach i.e. don't look for leaf nodes in the tree and try and work your way up. Instead always start at the top (the root) of the tree and work your way down to see if t
 ### Double Quotes
 
 Allow for variable expansion and command substitution but prevent word splitting and interpretation of special characters (except `$`, and `\`). We only need to worry about `$` (an env variable) in minishell.  
