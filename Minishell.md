@@ -6,16 +6,26 @@ thinking...
 
 We need to write a _grammar_ that describes the priority of each expression. This will be represented by a tree that the parser will traverse. 
 
-e.g.
+An example for orders of operations:
 
 ```C
 expr -> term + expr | term
-term -> factpr * term | factor*
+term -> factpr * term | factor
+factor -> (expr) | int
 ```
 
 An expr can be a term + an expression or a term
 A term can be a factor * term or a factor
 A factor can be an (expr) or an int
+
+Pseudocode:
+
+Parse a term, if it succeeds call it `x`.
+
+
+```C
+expression = 
+```
 
 `strtok()` is a `ft_split()` to tokenise strings.
  [recursive descent parser](http://en.wikipedia.org/wiki/Recursive_descent_parser) 
