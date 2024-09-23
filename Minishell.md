@@ -2,6 +2,8 @@
 
 ## Ideas/Style guide
 - Set all unused `fd`s to `-1` when not in use or being used.
+- Use `safe_free()` to free memory.
+- Leave a comment by each variable that is mallocated so we can safely free all allocated memory.
 ## Parsing
 
 thinking...
