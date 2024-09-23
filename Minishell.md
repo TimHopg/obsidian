@@ -18,10 +18,8 @@ An expr can be a term + an expression or a term
 A term can be a factor * term or a factor
 A factor can be an (expr) or an int
 
-Pseudocode:
-
+Pseudocode:  
 Parse a term, if it succeeds call it `x`.
-
 
 ```C
 expression = 
