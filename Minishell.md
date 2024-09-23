@@ -60,10 +60,13 @@ Call this before redisplaying the input prompt, esp in cases where the previous 
 Redisplays the prompt.
 #### `rl_replace_line()`
 
-`int rl_replace_line(const char *text, int clear_undo);`
-
+`int rl_replace_line(const char *text, int clear_undo);.  
 `text` is a pointer to the string that will replace the current line.
 
+#### `add_history()`
+
+`void add_history(const char *line);.  
+`readline()` doesn't automatically store every input, you have to manually call `add_history()` to store it. Allows you to skip non-meaningful lines.
 #### References
 [FrankenShell Doc](https://github.com/AshParker19/42_minishell/blob/main/docs/documentation.md)
 https://github.com/AshParker19/42_minishell/blob/main/docs/documentation.md
