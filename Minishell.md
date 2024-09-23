@@ -18,8 +18,14 @@ An expr can be a term + an expression or a term
 A term can be a factor * term or a factor
 A factor can be an (expr) or an int
 
-Pseudocode:  
-Parse a term, if it succeeds call it `x`.
+Pseudocode for parsing an expression (line 1 above):  
+First deal with the case if it is a term + expr. Parse a term, if it succeeds call it `x`.
+Then parse a char `+`.
+Then parse an expression and call it `y`.
+return `x + y`.
+OR the expression could just be a term.
+
+This allows us to both parse and evaluate the expression as we go.
 
 ```C
 expression = 
