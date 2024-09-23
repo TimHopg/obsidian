@@ -58,10 +58,11 @@ Call this before redisplaying the input prompt, esp in cases where the previous 
 #### `rl_redisplay()`
 
 Redisplays the prompt.
-
 #### `rl_replace_line()`
 
+`int rl_replace_line(const char *text, int clear_undo);`
 
+`text` is a pointer to the string that will replace 
 
 #### References
 [FrankenShell Doc](https://github.com/AshParker19/42_minishell/blob/main/docs/documentation.md)
