@@ -66,6 +66,22 @@ Recursive descent parser has a function for each type of grammar rule, commands,
 - To execute traverse the tree to execute commands
 	- For a pipeline, traverse each command node in the order they need to be executed, chaining outputs
 	- For logical operations, evaluate the left and right child nodes based on the operator (e.g. `&&` only evaluates the right side if the left succeeds).
+
+For an input like:  
+`cmd1 | cmd2 && cmd3 > output.txt`
+
+Your parser could produce an AST that looks like:  
+```
+		   &&  
+		 /    \
+	   |        >
+	  / \      / \
+  cmd1 cmd2 cmd3 output.txt
+```
+
+- The `|` node means `cmd1` pipes into `cmd2`.
+- The `&&` node means `cmd3` runs only if the pipeline `cmd1 | cmd2` succeeds.
+- The `>` node means `cmd3` redirects its output to `output.txt`.
 ### Double Quotes
 
 Allow for variable expansion and command substitution but prevent word splitting and interpretation of special characters (except `$`, and `\`). We only need to worry about `$` (an env variable) in minishell.  
