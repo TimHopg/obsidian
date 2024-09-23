@@ -52,6 +52,8 @@ Shells have a natural hierarchy, pipelines redirections etc. Each node can repre
 
 Recursive descent parser has a function for each type of grammar rule, commands, operators, arguments etc. This makes it easier to extend the shell with more complex features.
 
+
+
 ### High-level Design
 
 - Split the string into tokens (commands, operators (`|`, `&&`, `>` etc.))
