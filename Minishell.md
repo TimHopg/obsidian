@@ -96,7 +96,8 @@ Your parser could produce an AST that looks like:
 	 <obj> ::= <art> <noun> | two furry dice   ; "two furry dice is a globbet that isn't parsed"
 ```
 
-Each symbol on the left (`<sentence>`) has a stack of prerequisites on the right. So it will search for a `<subj>` then a `<verb>` and finally an `<obj>`.
+Each symbol on the left (`<sentence>`) has a stack of prerequisites on the right. So it will search for a `<subj>` then a `<verb>` and finally an `<obj>`.  
+Once `<subj>` has been satisfied, it is popped off the top of the stack.
 
 Sentence: _"The robot stroked the furry dice"_
 
