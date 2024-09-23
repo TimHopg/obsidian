@@ -9,6 +9,8 @@ We need something like `strtok()`.
  [recursive descent parser](http://en.wikipedia.org/wiki/Recursive_descent_parser)
 https://www.cs.unc.edu/~porter/courses/comp530/f23/lab1.html
 https://github.com/rehassachdeva/C-Shell/blob/master/parse.c
+https://stackoverflow.com/questions/10112038/parsing-commands-shell-like-in-c
+
 
 
 ### Double Quotes
@@ -42,5 +44,7 @@ Returns the line entered on the terminal. This is mallocated and must be freed b
 If `EOF` is encountered while reading the line and the line is empty `NULL` is returned.
 #### References
 [FrankenShell Doc](https://github.com/AshParker19/42_minishell/blob/main/docs/documentation.md)
+https://github.com/AshParker19/42_minishell/blob/main/docs/documentation.md
+https://minishell.org/echo__builtin_8c.html
 
 _2024-08-04 19:31_
