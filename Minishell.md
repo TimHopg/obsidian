@@ -89,7 +89,14 @@ Your parser could produce an AST that looks like:
 
 ```BNF
 <sentence> ::= <subj> <verb> <obj>
+    <subj> ::= <art> <noun> | the robot
+	 <art> ::= the | a
+	<noun> ::= dog | cat| man | woman | robot
+	<verb> ::= bit | kicked | stroked
+	 <obj> ::= <art> <noun> | two furry dice   ; "two furry dice is a globbet that isn't parsed"
 ```
+
+
 ### Double Quotes
 
 Allow for variable expansion and command substitution but prevent word splitting and interpretation of special characters (except `$`, and `\`). We only need to worry about `$` (an env variable) in minishell.  
