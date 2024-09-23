@@ -62,7 +62,7 @@ Redisplays the prompt.
 
 `int rl_replace_line(const char *text, int clear_undo);`
 
-`text` is a pointer to the string that will replace 
+`text` is a pointer to the string that will replace the current line.
 
 #### References
 [FrankenShell Doc](https://github.com/AshParker19/42_minishell/blob/main/docs/documentation.md)
