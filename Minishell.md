@@ -3,15 +3,14 @@
 ## Parsing
 
 thinking...
-What if we 
 
-We need something like `strtok()`.
- [recursive descent parser](http://en.wikipedia.org/wiki/Recursive_descent_parser)
-https://www.cs.unc.edu/~porter/courses/comp530/f23/lab1.html
-https://github.com/rehassachdeva/C-Shell/blob/master/parse.c
-https://stackoverflow.com/questions/10112038/parsing-commands-shell-like-in-c
+We need to write a _grammar_ that describes the priority of each expression. This will be represented by a tree that the parser will traverse. 
 
-
+`strtok()` is a `ft_split()` to tokenise strings.
+ [recursive descent parser](http://en.wikipedia.org/wiki/Recursive_descent_parser) 
+https://www.cs.unc.edu/~porter/courses/comp53./f23/lab1.html  
+https://github.com/rehassachdeva/C-Shell/blob/master/parse.c  
+https://stackoverflow.com/questions/10112038/parsing-commands-shell-like-in-c 
 
 ### Double Quotes
 
