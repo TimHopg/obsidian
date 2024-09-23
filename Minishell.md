@@ -53,7 +53,15 @@ Clears `readline`'s private history list.
 
 #### `rl_on_newline()`
 
-Call this before redisplaying the input prompt, esp in cases where the pr
+Call this before redisplaying the input prompt, esp in cases where the previous line might not have ended in a newline (e.g. when a partial command is given or the line editing gets interrupted (`SIGINT`)).
+
+#### `rl_redisplay()`
+
+Redisplays the prompt.
+
+#### `rl_replace_line()`
+
+
 
 #### References
 [FrankenShell Doc](https://github.com/AshParker19/42_minishell/blob/main/docs/documentation.md)
