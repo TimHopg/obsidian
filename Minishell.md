@@ -10,7 +10,7 @@ An example for orders of operations:
 
 ```C
 expr -> term + expr | term
-term -> factpr * term | factor
+term -> factor * term | factor
 factor -> (expr) | int
 ```
 
@@ -24,6 +24,16 @@ Then parse a char `+`.
 Then parse an expression and call it `y`.
 return `x + y`.
 OR the expression could just be a term.
+
+Pseudocode for parsing a term is almost the same as for an expression.
+
+Pseudocode for parsing a factor:  
+Can be a bracketed expression or an integer.
+First parse char `(`.
+Parse expression and call it `x`.
+Parse a char `)`
+return `x`.
+Or parse an integer.
 
 This allows us to both parse and evaluate the expression as we go.
 
