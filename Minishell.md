@@ -82,6 +82,14 @@ Your parser could produce an AST that looks like:
 - The `|` node means `cmd1` pipes into `cmd2`.
 - The `&&` node means `cmd3` runs only if the pipeline `cmd1 | cmd2` succeeds.
 - The `>` node means `cmd3` redirects its output to `output.txt`.
+
+#### Grammar for Example Language
+
+`::=` is defined as
+
+```BNF
+<sentence> ::= <subj> <verb> <obj>
+```
 ### Double Quotes
 
 Allow for variable expansion and command substitution but prevent word splitting and interpretation of special characters (except `$`, and `\`). We only need to worry about `$` (an env variable) in minishell.  
