@@ -56,7 +56,16 @@ Recursive descent parser has a function for each type of grammar rule, commands,
 
 - Split the string into tokens (commands, operators (`|`, `&&`, `>` etc.))
 - Define grammar rules for shell syntax
-- Write parsing functions that correspond to each gra
+- Write parsing functions that correspond to each grammar rule.
+	- `parse_command()`
+	- `parse_pipeline()`
+	- `parse_expression()` - `&&` `||`
+- Abstract Syntax Tree
+	- Leaf nodes are individual commands
+	- Internal nodes are operators (e.g. `&&`)
+- To execute traverse the tree to execute commands
+	- For a pipeline, traverse each command node in the order they need to be executed, chaining outputs
+	- For logical operations, evaluate the left and right child nodes based on the operator (e.g. `&&` only evaluates the right side if the left succeeds).
 ### Double Quotes
 
 Allow for variable expansion and command substitution but prevent word splitting and interpretation of special characters (except `$`, and `\`). We only need to worry about `$` (an env variable) in minishell.  
