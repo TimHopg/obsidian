@@ -101,7 +101,7 @@ Once `<subj>` has been satisfied, it is popped off the top of the stack.
 
 _When parsing `<subj>`, we see that it could be `<art>` and `<noun>` so those will be added to the top of the stack and popped when they are satisfied._
 
-Sentence: _"The robot stroked the furry dice"_
+Sentence: _"The robot stroked two furry dice"_
 
 We will use the top-down approach i.e. don't look for leaf nodes in the tree and try and work your way up. Instead always start at the top (the root) of the tree and work your way down to see if a sentence can be parsed (decoded).
 ### Double Quotes
