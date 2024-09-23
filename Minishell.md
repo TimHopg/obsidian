@@ -7,6 +7,10 @@ What if we
 
 We need something like `strtok()`.
  [recursive descent parser](http://en.wikipedia.org/wiki/Recursive_descent_parser)
+https://www.cs.unc.edu/~porter/courses/comp530/f23/lab1.html
+https://github.com/rehassachdeva/C-Shell/blob/master/parse.c
+
+
 ### Double Quotes
 
 Allow for variable expansion and command substitution but prevent word splitting and interpretation of special characters (except `$`, and `\`). We only need to worry about `$` (an env variable) in minishell.  
