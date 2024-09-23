@@ -51,7 +51,9 @@ https://tiswww.case.edu/php/chet/readline/readline.html#index-rl_005fon_005fnew_
 
 Clears `readline`'s private history list.
 
-#### 
+#### `rl_on_newline()`
+
+Call this before redisplaying the input prompt, esp in cases where the pr
 
 #### References
 [FrankenShell Doc](https://github.com/AshParker19/42_minishell/blob/main/docs/documentation.md)
