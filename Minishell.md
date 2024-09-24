@@ -146,7 +146,7 @@ Single quotes prevent all special character interpretation.
 `*` - zero or more
 `+` - one or more
 
-`<compound_command>` is run separately to other commands. In the shell any changes compound commands make to environment variables do not affect the other commands (which are run in the parent shell). The subject only mention
+`<compound_command>` is run separately to other commands. In the shell any changes compound commands make to environment variables do not affect the other commands (which are run in the parent shell). The subject only mentions priority so subshells I think are beyond the scope of the project.
 
 ```CFG
 # Top-level structure
