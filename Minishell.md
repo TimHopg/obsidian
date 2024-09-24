@@ -142,6 +142,8 @@ Single quotes prevent all special character interpretation.
 `::=` - is defined as
 `<symbol>`
 `[foo]` - `foo` is optional
+`^` - not
+`*` - wildcard
 
 ```CFG
 # Top-level structure
@@ -171,6 +173,7 @@ Single quotes prevent all special character interpretation.
 
 <unquoted_word> ::= <char>+ | "$" <env_var_name>
 
+; single_quoted_word starts and ends with single quotes and contains anything else inside. optional ([]) any character (*) not (^) single quote (')
 <single_quoted_word> ::= "'" [^']* "'"
 
 <double_quoted_word> ::= '"' (<char> | "$" <env_var_name>)* '"'
