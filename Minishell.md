@@ -172,7 +172,7 @@ Single quotes prevent all special character interpretation.
 <command_word> ::= <word>
 
 # Word and quoting
-<word> ::= <unquoted_word> | <single_quoted_word> | <double_quoted_word>
+<word> ::= <unquoted_word> | <single_quoted_content> | <double_quoted_content>
 
 <unquoted_word> ::= <char>+ | "$" <env_var_name>
 
@@ -198,7 +198,8 @@ Single quotes prevent all special character interpretation.
 <heredoc> ::= "<<" <word>
 
 # Additional rules
-<whitespace> ::= [ \t\n]+
+<whitespace> ::= [ \t]+
+; do we need a newline rule?
 ```
 ## Functions
 
