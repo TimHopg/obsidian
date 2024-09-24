@@ -134,7 +134,45 @@ E.g. `echo abc"def"` outputs `abcdef`, any spaces inside the quotes would also b
 ### Single Quotes  
 
 Single quotes prevent all special character interpretation.  
-    
+
+## Implementation
+
+### Grammar
+
+```CFG
+# Top-level structure
+<command_line> ::= <command_sequence> | <compound_command>
+<command_sequence> ::= <pipeline> | <command_sequence> "&&" <pipeline> | <command_sequence> "||" <pipeline>
+<compound_command> ::= "(" <command_sequence> ")"
+
+# Pipeline
+<pipeline> ::= <command> | <pipeline> "|" <command>
+
+# Command structure
+<command> ::= <simple_command> [<redirections>]
+<simple_command> ::= <command_prefix> [<command_word>] [<command_suffix>] | <command_word> [<command_suffix>]
+<command_prefix> ::= <io_redirect> | <command_prefix> <io_redirect>
+<command_suffix> ::= <io_redirect> | <word> | <command_suffix> <io_redirect> | <command_suffix> <word>
+<command_word> ::= <word>
+
+# Word and quoting
+<word> ::= <unquoted_word> | <single_quoted_word> | <double_quoted_word>
+<unquoted_word> ::= <char>+ | "$" <env_var_name>
+<single_quoted_word> ::= "'" [^']* "'"
+<double_quoted_word> ::= '"' (<char> | "$" <env_var_name>)* '"'
+<env_var_name> ::= [a-zA-Z_][a-zA-Z0-9_]*
+<char> ::= any printable character except whitespace and metacharacters
+
+# Redirections
+<redirections> ::= <io_redirect> | <redirections> <io_redirect>
+<io_redirect> ::= <input_redirect> | <output_redirect> | <heredoc>
+<input_redirect> ::= "<" <word>
+<output_redirect> ::= ">" <word> | ">>" <word>
+<heredoc> ::= "<<" <word>
+
+# Additional rules
+<whitespace> ::= [ \t\n]+
+```
 ## Functions
 
 ### `readline()`
