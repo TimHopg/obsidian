@@ -139,6 +139,11 @@ Single quotes prevent all special character interpretation.
 
 ### Grammar
 
+`::=` - is defined as
+`<symbol>`
+`[foo]` - `foo` is optional
+
+
 ```CFG
 # Top-level structure
 <command_line> ::= <command_sequence> | <compound_command>
