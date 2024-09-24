@@ -174,9 +174,9 @@ Single quotes prevent all special character interpretation.
 <unquoted_word> ::= <char>+ | "$" <env_var_name>
 
 ; single_quoted_word starts and ends with single quotes and contains anything else inside. optional ([]) any character (*) not (^) single quote (')
-<single_quoted_word> ::= "'" [^']* "'"
+<single_quoted_content> ::= "'" [^']* "'"
 
-<double_quoted_word> ::= '"' (<char> | "$" <env_var_name>)* '"'
+<double_quoted_content> ::= '"' (<char> | "$" <env_var_name> | <whitespace>)* '"'
 
 <env_var_name> ::= [a-zA-Z_][a-zA-Z0-9_]*
 
