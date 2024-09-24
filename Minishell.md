@@ -142,7 +142,7 @@ Single quotes prevent all special character interpretation.
 ```CFG
 # Top-level structure
 <command_line> ::= <command_sequence> | <compound_command>
-<command_sequence> ::= <pipeline> | <command_sequence> "&&" <pipeline> | <command_sequence> "||" <pipeline>
+<command_sequence> ::= <pipeline> | <command_sequence> "&&" <pipeline> |<command_sequence> "||" <pipeline>
 <compound_command> ::= "(" <command_sequence> ")"
 
 # Pipeline
