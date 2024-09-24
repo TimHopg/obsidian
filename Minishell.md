@@ -48,8 +48,8 @@ Parsers will consume a string and then return a result plus anything not consume
  [recursive descent parser](http://en.wikipedia.org/wiki/Recursive_descent_parser) 
 https://www.cs.unc.edu/~porter/courses/comp53./f23/lab1.html  
 https://github.com/rehassachdeva/C-Shell/blob/master/parse.c  
-https://stackoverflow.com/questions/10112038/parsing-commands-shell-like-in-c 
-
+https://stackoverflow.com/questions/10112038/parsing-commands-shell-like-in-c  
+https://en.wikipedia.org/wiki/Backus%E2%80%93Naur_form  
 ### Hierarchy
 
 Shells have a natural hierarchy, pipelines redirections etc. Each node can represent a command and each child nodes can represent components, arguments, files for redirection, subcommands.
