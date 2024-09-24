@@ -148,7 +148,7 @@ Single quotes prevent all special character interpretation.
 
 ```CFG
 # Top-level structure
-; command_line is defined as command_sequence or compound_command
+; command line input is defined as command_sequence or compound_command
 <command_line> ::= <command_sequence> | <compound_command>
 
 <command_sequence> ::= <pipeline> | <command_sequence> "&&" <pipeline> |<command_sequence> "||" <pipeline>
@@ -179,7 +179,8 @@ Single quotes prevent all special character interpretation.
 
 <double_quoted_content> ::= '"' (<char> | "$" <env_var_name> | <whitespace>)* '"'
 
-<env_var_name> ::= [a-zA-Z_][a-zA-Z0-9_]*
+; environment variables must have one or more alphanumeric chars (or underscore)
+<env_var_name> ::= [a-zA-Z0-9_]+
 
 <char> ::= any printable character except whitespace and metacharacters
 
