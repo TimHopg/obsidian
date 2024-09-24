@@ -143,7 +143,8 @@ Single quotes prevent all special character interpretation.
 `<symbol>`
 `[foo]` - `foo` is optional
 `^` - not
-`*` - wildcard
+`*` - zero or more
+`+` - one or more
 
 ```CFG
 # Top-level structure
