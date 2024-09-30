@@ -64,7 +64,7 @@ Add files to `.dockerignore` like git
 `docker run some_name` runs container
 You can instead use:  
 `docker run -it --name some_name debian` - to create and run in one command (`-it` interactive mode/pseudo TTY)
-`docker start [name of container]`
+`docker start -ai [name of container]`
 `docker exec -it [container] zsh`
 
 `docker inspect {image}` - shows architecture etc for image
