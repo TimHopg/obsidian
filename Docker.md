@@ -13,6 +13,7 @@ Docker have minimal footprints as they package only the app and its dependencies
 - Containers are stateless: when shutdown all data within them is lost. Makes them portable
 
 #### Dockerfile
+A text file that contains commands used to build a docker image
 ```dockerfile
 FROM debian:bullseye-20240211 // image distro and colon (image tag)
 
@@ -44,6 +45,8 @@ HEALTHCHECK --interval=30s --timeout=10s \
 
 VOLUME /db/data // mount volume if it needs to store data
 ```
+#### Docker Compose
+A tool for defining and running multi-container  applications. It allows you to define a set of containers and their dependencies in a single file `docker-compose.yml`
 
 #### Build
 `docker build . -t tagname`
