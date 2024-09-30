@@ -59,7 +59,7 @@ Add files to `.dockerignore` like git
 ### Testing
 `docker pull [debian]`
 `docker images` - check which images are installed
-`docker create debian` why random name
+`docker create debian` - creates container (why random name)
 `docker start [name of container]`
 `docker exec -it [container] zsh`
 
