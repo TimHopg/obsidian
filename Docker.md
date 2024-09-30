@@ -52,6 +52,7 @@ Add files to `.dockerignore` like git
 #### Run
 `docker run progname`
 `docker ps` - running and stopped containers (process status)
+`docker ps -a` - all containers
 `docker stop` or `docker kill`
 `docker push` - to a remote registry
 `docker pull ...`
@@ -59,7 +60,7 @@ Add files to `.dockerignore` like git
 ### Testing
 `docker pull [debian]`
 `docker images` - check which images are installed
-`docker create debian` - creates container (why random name)
+`docker create debian [cmd]` - creates container (why random name)
 `docker start [name of container]`
 `docker exec -it [container] zsh`
 
