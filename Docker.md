@@ -60,7 +60,10 @@ Add files to `.dockerignore` like git
 ### Testing
 `docker pull [debian]`
 `docker images` - check which images are installed
-`docker create debian [cmd]` - creates container (why random name)
+`docker create --name some_name debian(image_name) [cmd]` - creates container
+`docker run some_name` runs container
+You can instead use:  
+`docker run --name some_name -it debian` - to create and run in one command (`-it` interactive mode/pseudo TTY)
 `docker start [name of container]`
 `docker exec -it [container] zsh`
 
