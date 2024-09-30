@@ -71,7 +71,7 @@ You can instead use:
 `docker run -it --name some_name debian` - to create and run in one command (`-it` interactive mode/pseudo TTY)
 `docker start -ai [name of container]`
 `docker exec -it [container] zsh` - executes `zsh` in container
-`docker run -v /local/path:/container/path -it my-image` 
+`docker run --name container_name -v /local/path:/container/path -it my-image` - mounts local path to container path 
 
 `docker inspect {image}` - shows architecture etc for image
 
