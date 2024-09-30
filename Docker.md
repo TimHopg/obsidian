@@ -16,8 +16,10 @@ Docker have minimal footprints as they package only the app and its dependencies
 ```dockerfile
 FROM debian:bullseye-20240211 // image distro and colon (image tag)
 
+# creates a folder in the container's file system
 WORKDIR /usr/src // <- put source code here
 
+# anything run after WORKDIR takes place in WORKDIR
 RUN apt-get update && \ // runs any command like in the shell
 	apt-get install -y python3 python3-pip // install dependencies
 
@@ -65,7 +67,7 @@ Add files to `.dockerignore` like git
 You can instead use:  
 `docker run -it --name some_name debian` - to create and run in one command (`-it` interactive mode/pseudo TTY)
 `docker start -ai [name of container]`
-`docker exec -it [container] zsh`
+`docker exec -it [container] zsh` - executes `zsh` in container
 
 `docker inspect {image}` - shows architecture etc for image
 
