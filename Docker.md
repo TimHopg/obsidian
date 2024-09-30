@@ -46,7 +46,7 @@ HEALTHCHECK --interval=30s --timeout=10s \
 VOLUME /db/data // mount volume if it needs to store data
 ```
 #### Docker Compose
-A tool for defining and running multi-container  applications. It allows you to define a set of containers and their dependencies in a single file `docker-compose.yml`
+A tool for defining and running multi-container  applications. It allows you to define a set of containers and their dependencies in a single file `docker-compose.yml`.
 
 #### Build
 `docker build . -t tagname`
@@ -71,6 +71,7 @@ You can instead use:
 `docker run -it --name some_name debian` - to create and run in one command (`-it` interactive mode/pseudo TTY)
 `docker start -ai [name of container]`
 `docker exec -it [container] zsh` - executes `zsh` in container
+`docker run -v /local/path:/container/path -it my-image` 
 
 `docker inspect {image}` - shows architecture etc for image
 
