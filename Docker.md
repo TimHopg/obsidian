@@ -51,7 +51,7 @@ Add files to `.dockerignore` like git
 - Docker scout
 #### Run
 `docker run progname`
-`docker ps` - running and stopped containers
+`docker ps` - running and stopped containers (process status)
 `docker stop` or `docker kill`
 `docker push` - to a remote registry
 `docker pull ...`
