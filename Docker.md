@@ -11,7 +11,6 @@ Docker have minimal footprints as they package only the app and its dependencies
 - Dockerfile is used to build an image which contains an OS, dependencies and code
 - Image must be run as a container
 - Containers are stateless: when shutdown all data within them is lost. Makes them portable
-
 #### Dockerfile
 A text file that contains commands used to build a docker image
 ```dockerfile
@@ -61,7 +60,6 @@ Add files to `.dockerignore` like git
 `docker stop` or `docker kill`
 `docker push` - to a remote registry
 `docker pull ...`
-
 ### Testing
 `docker pull [debian]`
 `docker images` - check which images are installed
