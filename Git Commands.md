@@ -53,7 +53,11 @@ Add public key to github
 `git clean -fd` - remove files from working directory (hdd), recursive, directors
 `git clean -nd` - git clean dry run
 
-`git reet --hard HEAD` - restores working directory to last commit
+`git reset --hard HEAD` - restores working directory to last commit
+#### Working In Teams
+`git fetch` - downloads objects and refs
+`git pull` - makes sure current branch is up to date.
+`git checkout -b new_branch` Creates new branch (`-b`) and checks out to it. `new_branch` will be a copy of 
 #### Git Logs
 `git log (--oneline --reverse)` - Git history/log
 `git show d60(identifier)` - shows contents of commit
