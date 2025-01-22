@@ -55,9 +55,17 @@ Add public key to github
 
 `git reset --hard HEAD` - restores working directory to last commit
 #### Working In Teams
-`git fetch` - downloads objects and refs
-`git pull` - makes sure current branch is up to date.
-`git checkout -b new_branch` Creates new branch (`-b`) and checks out to it. `new_branch` will be a copy of 
+`git checkout master_branch`  
+`git fetch` - downloads objects and refs (`gf`)
+`git pull` - makes sure current branch is up to date (`gp`)
+`gco -b new_branch` Creates new branch (`-b`) and checks out to it. `new_branch` will be a copy of `master_branch`
+*Make your changes*
+`gco master_branch`
+`gp`
+`gco new_branch`
+`git merge master_branch` - updates `new branch` with any changes made to `master branch`
+`gco master_branch`
+`gm`
 #### Git Logs
 `git log (--oneline --reverse)` - Git history/log
 `git show d60(identifier)` - shows contents of commit
