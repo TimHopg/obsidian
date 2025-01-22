@@ -1,4 +1,6 @@
 #todo #Git #Shell 
+
+'`origin`' is the shorthand name assigned to the URL of the remote repo associated with your project
 ### To Add Repo from Command Line
 `curl -u "TimHopg" https://api.github.com/user/repos -d '{"name":"EDIT_NAME","private":true}'`
 
@@ -72,7 +74,8 @@ Before git merging think about squashing several commits into one using rebase
 Change `pick` to `squash` or `s`. Leave the top commit as `pick`.
 Comment out any commit messages you don't want to include.
 `git push --force` to implement those changes *make sure you're the only person working on that branch if you're forcing changes*
-#### Deleti
+#### Deleting branches
+`git push origin --delete branch_name`
 #### Git Rebase
 #### Git Logs
 `git log (--oneline --reverse)` - Git history/log
@@ -87,14 +90,14 @@ System - all users
 Global - all repos of current user
 Local - Current repo
 #### Git Config
-git config --global user.name "Tim Hopgood" _(double quotes because of space)_
-git config --global user.email 'timhopgood@gmail.com'
-git config --global core.editor 'vim'
-git config --global core.editor "code --wait" (VS Studio Code but waits for the user to close current project)
+`git config --global user.name "Tim Hopgood"` _(double quotes because of space)_
+`git config --global user.email 'timhopgood@gmail.com'`
+`git config --global core.editor 'vim'`
+`git config --global core.editor "code --wait"` (VS Studio Code but waits for the user to close current project)
 _Opens default editor to edit (-e/--edit) global settings_
-git config --global -e
+`git config --global -e`
 _Deals with carriage return and line feed. "true" on Windows and "input" on Linux_
-git config --global core.autocrlf input
+`git config --global core.autocrlf input`
 `git config --global diff.tool vscode` - sets vscode to difftol
 `git config --global difftool.vscode.cmd "code --wait --diff $LOCAL $REMOTE` - variables are placeholders for file copies
 `gi config --global -e` - checks settings
