@@ -57,15 +57,21 @@ Add public key to github
 #### Working In Teams
 `git checkout master_branch`  
 `git fetch` - downloads objects and refs (`gf`)
-`git pull` - makes sure current branch is up to date (`gp`)
+`git pull` - makes sure current branch is up to date
 `gco -b new_branch` Creates new branch (`-b`) and checks out to it. `new_branch` will be a copy of `master_branch`
 *Make your changes*
-`gco master_branch`
-`gp`
-`gco new_branch`
+`gco master_branch` - change to master branch
+`git pull` - make sure most recent
+`gco new_branch` - change back to new branch
 `git merge master_branch` - updates `new branch` with any changes made to `master branch`
-`gco master_branch`
-`gm`
+`gco master_branch` - back to master branch again
+`gm new_branch` - merge changes from new_branch into master
+
+Before git merging think about squashing several commits into one using rebase
+`git rebase -i HEAD~N` - where `N` is the number of previous commits to squash
+Change `pick` to `squash` or `s`. Leave the top commit as `pick`.
+`git rebase --continue` - to complete
+#### Git Rebase
 #### Git Logs
 `git log (--oneline --reverse)` - Git history/log
 `git show d60(identifier)` - shows contents of commit
