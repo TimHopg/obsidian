@@ -78,6 +78,8 @@ Comment out any commit messages you don't want to include.
 `git push origin --delete branch_name` - deletes from remote
 `git branch -d branch_name` - deletes local branch
 `git branch -D branch_name` - force deletes
+
+`git remote prune origin` if it's out of sync
 #### Git Rebase
 #### Git Logs
 `git log (--oneline --reverse)` - Git history/log
