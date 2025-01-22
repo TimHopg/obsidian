@@ -72,7 +72,7 @@ Before git merging think about squashing several commits into one using rebase
 Change `pick` to `squash` or `s`. Leave the top commit as `pick`.
 Comment out any commit messages you don't want to include.
 `git push --force` to implement those changes *make sure you're the only person working on that branch if you're forcing changes*
-
+#### Deleti
 #### Git Rebase
 #### Git Logs
 `git log (--oneline --reverse)` - Git history/log
