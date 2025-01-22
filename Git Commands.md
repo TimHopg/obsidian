@@ -81,6 +81,10 @@ Comment out any commit messages you don't want to include.
 
 `git remote prune origin` if it's out of sync
 #### Git Rebase
+
+#### Git Stash
+`git stash` - stores all non-committed changes allowing you to `gco` to other branches
+`git stash pop` - restores those changes
 #### Git Logs
 `git log (--oneline --reverse)` - Git history/log
 `git show d60(identifier)` - shows contents of commit
