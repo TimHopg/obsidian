@@ -66,11 +66,13 @@ Add public key to github
 `git merge master_branch` - updates `new branch` with any changes made to `master branch`
 `gco master_branch` - back to master branch again
 `gm new_branch` - merge changes from new_branch into master
-
+##### Squashing/Combining Commits
 Before git merging think about squashing several commits into one using rebase
 `git rebase -i HEAD~N` - where `N` is the number of previous commits to squash. (`-i` is interactive)
 Change `pick` to `squash` or `s`. Leave the top commit as `pick`.
-`git rebase --continue` - to complete
+Comment out any commit messages you don't want to include.
+`git push --force` to implement those changes *make sure you're the only person working on that branch if you're forcing changes*
+
 #### Git Rebase
 #### Git Logs
 `git log (--oneline --reverse)` - Git history/log
