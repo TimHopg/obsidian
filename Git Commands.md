@@ -68,7 +68,7 @@ Add public key to github
 `gm new_branch` - merge changes from new_branch into master
 
 Before git merging think about squashing several commits into one using rebase
-`git rebase -i HEAD~N` - where `N` is the number of previous commits to squash
+`git rebase -i HEAD~N` - where `N` is the number of previous commits to squash. (`-i` is interactive)
 Change `pick` to `squash` or `s`. Leave the top commit as `pick`.
 `git rebase --continue` - to complete
 #### Git Rebase
