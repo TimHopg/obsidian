@@ -34,7 +34,7 @@ Add public key to github
 `git branch NAME` - creates new branch
 `git checkout NAME` - switches to `NAME` branch
 `git checkout -b NAME` - creates and switches to `NAME` branch in one command
-`git push -u origin NAME` - pushes the new branch to the remote repo
+`git push -u origin NAME` - pushes the new branch to the remote repo (`-u` stands for set upstream)
 
 `git fetch` - if newly created branches are not appearing, `fetch` updates local references
 #### Git Commands
@@ -75,7 +75,9 @@ Change `pick` to `squash` or `s`. Leave the top commit as `pick`.
 Comment out any commit messages you don't want to include.
 `git push --force` to implement those changes *make sure you're the only person working on that branch if you're forcing changes*
 #### Deleting branches
-`git push origin --delete branch_name`
+`git push origin --delete branch_name` - deletes from remote
+`git branch -d branch_name` - deletes local branch
+`git branch -D branch_name` - force deletes
 #### Git Rebase
 #### Git Logs
 `git log (--oneline --reverse)` - Git history/log
