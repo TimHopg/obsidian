@@ -36,7 +36,9 @@ Add public key to github
 `git checkout -b NAME` - creates and switches to `NAME` branch in one command
 `git push -u origin NAME` - pushes the new branch to the remote repo (`-u` stands for set upstream)
 
-`git fetch` - if newly created branches are not appearing, `fetch` updates local references
+`git fetch` - if newly created branches are not appearing, `fetch` updates local references.
+
+`fetch` vs `pull` - `fetch` downloads updates to local repository but doesn't merge them. `pull` downloads the updates and immediately merges them
 #### Git Commands
 `git rm --cached <file_name>` - Removes from git repo but leaves on disk (previously committed)
 `git init` - initialise new repo
