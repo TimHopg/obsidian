@@ -2,7 +2,7 @@
 
 '`origin`' is the shorthand name assigned to the URL of the remote repo associated with your project
 ### To Add Repo from Command Line
-`curl -u "TimHopg" https://api.github.com/user/repos -d '{"name":"EDIT_NAME","private":true}'`
+`curl -u "TimHopg" https://api.github.com/user/repos -d '{"name":"***EDIT_NAME***","private":true}'`
 
 generate token from settings > dev tools at github. use this instead of password. set expiry date
 
